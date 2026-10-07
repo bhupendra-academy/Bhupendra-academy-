@@ -1,498 +1,871 @@
 <!DOCTYPE html>
-<html lang="ne" class="scroll-smooth bg-slate-50">
+<html lang="ne">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- High-End SEO Meta Tags -->
-    <title>Bhupendra Poudel | Digital Creator & Numerology Consultant</title>
-    <meta name="description" content="म भुपेन्द्र पौडेल (Bhupendra Poudel), नेपालका Digital Creator, Digital Marketer, र Numerology Consultant हुँ। AI Tools, Digital Education र Social Media Marketing सिक्नुहोस्।">
-    <meta name="keywords" content="Bhupendra Poudel, भुपेन्द्र पौडेल, Digital Creator Nepal, Mobile Numerology, AI in Nepali, Digital Marketing Nepal">
-    <meta name="author" content="Bhupendra Poudel">
-    
-    <!-- Open Graph for Social Media Sharing -->
-    <meta property="og:title" content="Bhupendra Poudel - सफलताका सूत्र">
-    <meta property="og:description" content="ज्ञानलाई सिर्जनामा, सिर्जनालाई ब्रान्डमा बदल्नुहोस्। AI र Digital Marketing सिक्ने नेपालको उत्कृष्ट प्लेटफर्म।">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bhupendrapoudel77.com.np/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>भुपेन्द्र पौडेल - Ultimate Digital Empire & Numerology</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root {
+  --bg-main: #040811; --bg-card: #0a1220; --bg-panel: #111d33;
+  --gold: #d4af37; --gold-light: #f5d176; --gold-dark: #997a00;
+  --text-main: #e6f1ff; --text-muted: #8892b0;
+  --accent-blue: #3a7bd5; --accent-red: #e74c3c; --accent-green: #2ecc71;
+  --border: rgba(212, 175, 55, 0.2);
+  --ff-title: 'Cinzel', serif; --ff-nep: 'Noto Sans Devanagari', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--ff-nep); background: var(--bg-main); color: var(--text-main); min-height: 100vh; overflow-x: hidden; }
 
-    <!-- AI & Google SEO Schema (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Bhupendra Poudel",
-      "alternateName": "भुपेन्द्र पौडेल",
-      "url": "https://bhupendrapoudel77.com.np/",
-      "jobTitle": ["Digital Creator", "Digital Marketer", "Numerology Consultant", "AI Content Creator"],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "सफलताका सूत्र"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mahalaxmi Municipality, Ward 1",
-        "addressRegion": "Koshi Province",
-        "addressCountry": "Nepal"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+977-9842116209",
-        "contactType": "Customer Service"
-      },
-      "sameAs": [
-        "https://www.facebook.com/vhupendra.poudel/",
-        "https://www.instagram.com/bhupendrapoudel123/",
-        "https://www.tiktok.com/@bhupendrapoudel"
-      ]
-    }
-    </script>
+/* HEADER */
+.header { background: linear-gradient(180deg, #020408 0%, rgba(4,8,17,0.95) 100%); border-bottom: 1px solid var(--border); padding: 15px 20px; position: sticky; top:0; z-index:100; backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; }
+.brand h1 { font-family: var(--ff-title); color: var(--gold); font-size: 1.4rem; letter-spacing: 1px; text-transform: uppercase; }
+.brand p { color: var(--text-muted); font-size: 0.75rem; margin-top: 4px; }
+.badge { background: linear-gradient(90deg, var(--gold-dark), var(--gold)); color: #000; font-size: 0.65rem; font-weight: bold; padding: 3px 10px; border-radius: 20px; display: inline-block; margin-top: 5px; }
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Inter', 'Noto Sans Devanagari', 'sans-serif'], },
-                    colors: { brand: { 50: '#eff6ff', 500: '#3b82f6', 600: '#2563eb', 900: '#1e3a8a', }, dark: '#0f172a', }
-                }
-            }
-        }
-    </script>
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+/* MAIN NAVIGATION */
+.nav-scroll { overflow-x: auto; white-space: nowrap; background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 10px; position: sticky; top: 73px; z-index: 99; display: flex; gap: 5px; justify-content: flex-start; scrollbar-width: none; }
+.nav-scroll::-webkit-scrollbar { display: none; }
+.nav-btn { background: transparent; color: var(--text-muted); border: none; padding: 10px 15px; border-radius: 8px; font-family: var(--ff-nep); font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.3s; white-space: nowrap; }
+.nav-btn:hover { color: var(--gold-light); background: rgba(212,175,55,0.05); }
+.nav-btn.active { color: #000; background: linear-gradient(135deg, var(--gold), var(--gold-light)); box-shadow: 0 4px 10px rgba(212,175,55,0.3); }
 
-    <!-- Firebase System -->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
-        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
-        const firebaseConfig = {
-            apiKey: "AIzaSyA7m45u-qNcF09qdMp-wN0LfGV4IIZgzTI", authDomain: "bhupendra-bookstore.firebaseapp.com", projectId: "bhupendra-bookstore", storageBucket: "bhupendra-bookstore.firebasestorage.app", messagingSenderId: "112935091261", appId: "1:112935091261:web:11caf9607bdf1019aafe54"
-        };
-        const app = initializeApp(firebaseConfig);
-        window.db = getFirestore(app);
-        window.collection = collection; window.addDoc = addDoc;
-    </script>
+/* SUB NAVIGATION (For Numerology) */
+.sub-nav { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center; }
+.sub-btn { background: rgba(255,255,255,0.05); color: var(--text-main); border: 1px solid var(--border); padding: 8px 15px; border-radius: 20px; font-size: 0.8rem; cursor: pointer; position: relative; }
+.sub-btn.active { background: var(--gold); color: #000; font-weight: bold; }
+.lock-icon { position: absolute; top: -5px; right: -5px; background: var(--accent-red); color: white; width: 16px; height: 16px; border-radius: 50%; font-size: 0.55rem; display: flex; align-items: center; justify-content: center; }
 
-    <style>
-        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #f1f5f9; } ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        .glass-nav { background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
-        .watermark-bg { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200" opacity="0.05"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" transform="rotate(-45 50 50)">Bhupendra Poudel</text></svg>'); }
-    </style>
+/* LAYOUT & CARDS */
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; padding-bottom: 100px; }
+.tab-content, .sub-tab-content { display: none; animation: fadeIn 0.4s ease; }
+.tab-content.active, .sub-tab-content.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+.card-title { font-family: var(--ff-title); color: var(--gold); font-size: 1.1rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 10px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; }
+@media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+.panel { background: rgba(255,255,255,0.03); border-left: 3px solid var(--gold); padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+.panel.green { border-left-color: var(--accent-green); background: rgba(46,204,113,0.05); }
+.panel.red { border-left-color: var(--accent-red); background: rgba(231,76,60,0.05); }
+
+/* FORMS */
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; color: var(--gold-light); font-size: 0.8rem; margin-bottom: 5px; }
+.input-control { width: 100%; padding: 12px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-family: sans-serif; }
+.input-control:focus { outline: none; border-color: var(--gold); background: rgba(212,175,55,0.05); }
+textarea.input-control { resize: vertical; min-height: 100px; }
+.btn-primary { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: #000; border: none; padding: 12px 25px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.3s; }
+.btn-primary:hover { box-shadow: 0 5px 15px rgba(212,175,55,0.4); transform: translateY(-2px); }
+
+/* NUMEROLOGY BOXES & LOSHU */
+.n-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 15px 0; }
+.n-box { background: rgba(212,175,55,0.05); border: 1px solid var(--border); border-radius: 8px; padding: 15px 10px; text-align: center; }
+.n-box-lbl { color: var(--text-muted); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 5px; }
+.n-box-val { font-family: var(--ff-title); font-size: 2rem; color: var(--gold-light); font-weight: bold; }
+.n-box-desc { color: var(--text-main); font-size: 0.75rem; margin-top: 5px; }
+
+.m-digits { display: flex; justify-content: center; flex-wrap: wrap; gap: 5px; margin: 15px 0; }
+.m-d { width: 40px; height: 50px; display: flex; flex-direction:column; justify-content: center; align-items: center; background: var(--bg-panel); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; font-family: sans-serif; font-size: 1.2rem; font-weight: bold; }
+.m-d.good { color: var(--accent-green); border-color: rgba(46,204,113,0.3); }
+.m-d.bad { color: var(--accent-red); border-color: rgba(231,76,60,0.3); }
+.m-d.neu { color: var(--gold-light); }
+.m-i { font-size:0.6rem; color:var(--text-muted); font-weight:normal; margin-top:2px; }
+
+.loshu-wrapper { display: flex; justify-content: center; margin: 20px 0; }
+.loshu-grid { display: grid; grid-template-columns: repeat(3, 70px); grid-template-rows: repeat(3, 70px); gap: 5px; }
+.l-cell { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-family: var(--ff-title); color: var(--gold-light); font-weight: bold; position: relative; }
+.l-cell.empty { opacity: 0.3; }
+.l-cell.multiple { background: rgba(212,175,55,0.1); border-color: var(--gold); }
+.l-dots { position: absolute; bottom: 5px; display: flex; gap: 2px; }
+.l-dot { width: 5px; height: 5px; background: var(--accent-red); border-radius: 50%; }
+
+/* STORE & LMS */
+.product-card { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; text-align: center; }
+.product-img { width: 100%; height: 150px; background: #111; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--gold); border-bottom: 1px solid var(--border); position: relative; }
+.product-info { padding: 15px; }
+.price { color: var(--accent-green); font-size: 1.2rem; font-weight: bold; margin: 10px 0; font-family: sans-serif; }
+.course-progress { height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; margin: 10px 0; overflow: hidden; }
+.progress-bar { height: 100%; background: var(--accent-green); width: 45%; }
+
+/* BLOG & AFFILIATE */
+.stat-box { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; text-align: center; border: 1px solid rgba(255,255,255,0.05); }
+.stat-val { font-size: 2rem; color: var(--gold-light); font-family: sans-serif; font-weight: bold; }
+.blog-card { display: flex; gap: 15px; padding: 15px; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 15px; align-items: center; cursor: pointer; transition: 0.3s; }
+.blog-card:hover { border-color: var(--gold); transform: translateX(5px); }
+@media (max-width: 600px) { .blog-card { flex-direction: column; text-align: center; } }
+.blog-img { width: 140px; height: 90px; background: #000; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; border: 1px solid rgba(255,255,255,0.1); }
+.blog-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+.play-btn { position: absolute; color: white; font-size: 2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+
+/* SINGLE BLOG VIEW */
+.single-blog-header { border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-bottom: 20px; }
+.single-blog-title { color: var(--gold); font-size: 1.8rem; margin-bottom: 10px; }
+.single-blog-meta { color: var(--text-muted); font-size: 0.85rem; display: flex; gap: 15px; }
+.yt-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin: 20px 0; border: 1px solid var(--border); }
+.yt-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.blog-text-content { line-height: 1.8; color: #f0f0f0; font-size: 1.05rem; white-space: pre-line; }
+
+/* PAYWALL MODAL */
+.overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(5px); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
+.modal { background: var(--bg-card); border: 1px solid var(--gold); border-radius: 12px; width: 100%; max-width: 450px; padding: 25px; text-align: center; position: relative; box-shadow: 0 10px 40px #000; }
+.close-btn { position: absolute; top: 15px; right: 15px; background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; }
+.price-tag { font-family: sans-serif; font-size: 2.5rem; color: #fff; font-weight: bold; margin: 15px 0; }
+
+/* AI CHATBOT */
+.chat-btn { position: fixed; bottom: 25px; right: 25px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.8rem; color: #000; cursor: pointer; box-shadow: 0 5px 20px rgba(212,175,55,0.5); z-index: 9999; animation: bounce 2s infinite; transition: 0.3s; }
+.chat-btn:hover { transform: scale(1.1); animation: none; }
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-10px);} 60% {transform: translateY(-5px);} }
+.chat-window { display: none; position: fixed; bottom: 95px; right: 25px; width: 330px; height: 420px; background: var(--bg-card); border: 1px solid var(--gold); border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.8); z-index: 9999; flex-direction: column; overflow: hidden; }
+.chat-hdr { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: #000; padding: 12px 15px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+.chat-body { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; background: var(--bg-main); font-size: 0.85rem; }
+.msg { max-width: 85%; padding: 10px 12px; border-radius: 10px; line-height: 1.4; }
+.msg.bot { background: rgba(212,175,55,0.1); border: 1px solid var(--border); align-self: flex-start; border-bottom-left-radius: 0; }
+.msg.user { background: var(--accent-blue); color: #fff; align-self: flex-end; border-bottom-right-radius: 0; }
+.chat-footer { padding: 10px; background: var(--bg-panel); display: flex; gap: 8px; border-top: 1px solid rgba(255,255,255,0.1); }
+.chat-input { flex: 1; padding: 10px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.5); color: #fff; outline: none; }
+.chat-send { background: none; border: none; color: var(--gold); font-size: 1.2rem; cursor: pointer; padding: 0 5px; }
+
+</style>
 </head>
-<body class="text-slate-800 antialiased flex flex-col min-h-screen watermark-bg">
+<body>
 
-    <!-- TOP PROMO BAR (Coupons Feature) -->
-    <div class="bg-gradient-to-r from-brand-600 to-brand-900 text-white text-xs md:text-sm py-2 px-4 text-center font-medium">
-        🎉 विशेष अफर: चेकआउटमा <span class="font-bold text-yellow-300 px-1">DASHAIN50</span> कुपन प्रयोग गर्नुहोस् र रु. ५० छुट पाउनुहोस्!
+<div class="header">
+  <div class="brand">
+    <h1>Bhupendra Poudel</h1>
+    <p>Grand Master Numerology & Digital Creator</p>
+    <div class="badge">✦ 25+ Years of Experience ✦</div>
+  </div>
+  <div>
+    <button class="nav-btn" style="border:1px solid var(--gold); color:var(--gold); padding:6px 12px;" onclick="alert('Firebase Google Auth Pending. Use PRO25 passcode for Pro access.')"><i class="fab fa-google"></i> Login</button>
+  </div>
+</div>
+
+<div class="nav-scroll">
+  <button class="nav-btn active" onclick="switchMainTab('tab-home', this)"><i class="fas fa-home"></i> होम</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-numerology', this)"><i class="fas fa-star"></i> न्यूमेरोलोजी प्रो</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-store', this)"><i class="fas fa-store"></i> स्टोर</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-lms', this)"><i class="fas fa-graduation-cap"></i> मेरो कोर्स</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-affiliate', this)"><i class="fas fa-chart-line"></i> एफिलिएट</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-blog', this)"><i class="fas fa-newspaper"></i> ब्लग / ज्ञान</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-admin', this)" style="color: var(--accent-red);"><i class="fas fa-cog"></i> एडमिन</button>
+</div>
+
+<div class="container">
+
+  <!-- ==================== TAB 1: HOME ==================== -->
+  <section id="tab-home" class="tab-content active">
+    <div class="card" style="text-align: center; padding: 40px 20px;">
+      <img src="https://ui-avatars.com/api/?name=Bhupendra+Poudel&background=d4af37&color=000&size=100" style="border-radius:50%; border:3px solid var(--gold); margin-bottom:15px;">
+      <h2 style="font-family: var(--ff-title); color: var(--gold-light); font-size: 1.8rem;">Welcome to the Digital Empire</h2>
+      <p style="color: var(--text-muted); line-height: 1.8; max-width: 700px; margin: 15px auto;">
+        अंकशास्त्र (Numerology) केवल अन्धविश्वास होइन, यो ऊर्जा, कम्पन र मानव मनोविज्ञानसँग सम्बन्धित विज्ञान हो। २५ वर्षको अनुभवको आधारमा तयार पारिएको यो प्लेटफर्ममा तपाईंले आफ्नो जीवनको नक्सा, सफलताको साँचो, र डिजिटल सीप सिक्न सक्नुहुनेछ।
+      </p>
+      <div style="display: flex; justify-content: center; gap: 15px; margin-top: 25px; flex-wrap: wrap;">
+        <button class="btn-primary" style="width: auto;" onclick="document.querySelectorAll('.nav-btn')[1].click()"><i class="fas fa-magic"></i> ऊर्जा विश्लेषण सुरु गर्नुहोस्</button>
+        <button class="btn-primary" style="width: auto; background: var(--accent-green); color: #fff; border: none;" onclick="window.open('https://wa.me/9779842116209', '_blank')"><i class="fab fa-whatsapp"></i> WhatsApp Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TAB 2: NUMEROLOGY PRO ==================== -->
+  <section id="tab-numerology" class="tab-content">
+    <div class="sub-nav">
+      <button class="sub-btn active" onclick="switchSubTab('num-birth', this)">जन्म र लो-शु (Free)</button>
+      <button class="sub-btn" onclick="switchSubTab('num-mobile', this)">मोबाइल मास्टर <i class="fas fa-lock lock-icon p-lock"></i></button>
+      <button class="sub-btn" onclick="switchSubTab('num-name', this)">नाम सुधार (AI) <i class="fas fa-lock lock-icon p-lock"></i></button>
+      <button class="sub-btn" onclick="switchSubTab('num-remedy', this)">वैदिक उपाय <i class="fas fa-lock lock-icon p-lock"></i></button>
     </div>
 
-    <!-- MAIN NAVIGATION -->
-    <header class="glass-nav sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-            <!-- Brand -->
-            <div class="flex items-center gap-3 cursor-pointer" onclick="navigate('home')">
-                <div class="w-12 h-12 bg-dark rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">BP</div>
-                <div>
-                    <h1 class="text-xl font-black text-dark leading-none tracking-tight uppercase">Bhupendra Poudel</h1>
-                    <span class="text-xs text-brand-600 font-bold uppercase tracking-widest">सफलताका सूत्र</span>
-                </div>
-            </div>
-            
-            <!-- Desktop Menu -->
-            <nav class="hidden md:flex space-x-2 bg-white/50 p-1.5 rounded-full border border-slate-200">
-                <button onclick="navigate('home')" class="nav-btn px-4 py-2 rounded-full text-sm font-bold text-brand-600 bg-brand-50 transition-all">Profile</button>
-                <button onclick="navigate('store')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold text-slate-600 hover:text-brand-600 transition-all">Digital Store</button>
-                <button onclick="navigate('lms')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold text-slate-600 hover:text-brand-600 transition-all">My Courses</button>
-                <button onclick="navigate('affiliate')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold text-slate-600 hover:text-brand-600 transition-all"><i class="fa-solid fa-handshake mr-1"></i> Affiliate</button>
-            </nav>
-
-            <!-- Actions -->
-            <div class="flex items-center space-x-5">
-                <button onclick="navigate('cart')" class="relative text-slate-600 hover:text-brand-600 transition">
-                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                    <span id="cart-count" class="absolute -top-2 -right-2 bg-rose-500 text-white text-[10px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow">0</span>
-                </button>
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden text-2xl text-slate-700"><i class="fa-solid fa-bars"></i></button>
-            </div>
+    <!-- SUB-TAB: BIRTH & LOSHU -->
+    <div id="num-birth" class="sub-tab-content active">
+      <div class="card">
+        <div class="card-title"><i class="fas fa-user-circle"></i> आधारभूत जन्म विश्लेषण</div>
+        <div class="grid-2">
+          <div class="input-group">
+            <label>पूरा नाम (English):</label>
+            <input type="text" id="b-name" class="input-control" placeholder="e.g. Ram Nepal">
+          </div>
+          <div class="input-group">
+            <label>जन्म मिति (DD-MM-YYYY):</label>
+            <input type="text" id="b-dob" class="input-control" placeholder="e.g. 23-06-1990">
+          </div>
         </div>
-    </header>
-
-    <!-- CONTENT CONTAINER -->
-    <main class="flex-grow w-full">
-
-        <!-- ================= 1. PERSONAL PROFILE (Home) ================= -->
-        <section id="sec-home" class="view-section active w-full">
-            <div class="max-w-7xl mx-auto px-4 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                
-                <div class="space-y-6">
-                    <div class="inline-block px-4 py-1.5 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
-                        <i class="fa-solid fa-circle-check text-brand-500 mr-1"></i> Official Profile
-                    </div>
-                    <h2 class="text-4xl md:text-6xl font-black text-dark leading-[1.1]">
-                        ज्ञानलाई सिर्जनामा,<br>
-                        सिर्जनालाई <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-purple-600">ब्रान्डमा</span> बदल्नुहोस्।
-                    </h2>
-                    <p class="text-lg text-slate-600 leading-relaxed">
-                        म भुपेन्द्र पौडेल (Bhupendra Poudel), नेपालका Digital Creator, Digital Marketer, तथा Numerology Consultant हुँ। 
-                        Digital Marketing, AI Tools, र Social Media का क्षेत्रमा काम गर्दै आएको छु।
-                    </p>
-                    
-                    <!-- Direct Contact Actions -->
-                    <div class="flex flex-wrap gap-4 pt-4">
-                        <a href="https://wa.me/9779842116209" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600 transition flex items-center gap-2 shadow-lg shadow-green-500/30">
-                            <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Me
-                        </a>
-                        <a href="tel:+9779842116209" class="bg-slate-800 text-white px-6 py-3 rounded-xl font-bold hover:bg-black transition flex items-center gap-2">
-                            <i class="fa-solid fa-phone"></i> 9842116209
-                        </a>
-                        <button onclick="navigate('store')" class="w-full sm:w-auto text-center border-2 border-brand-600 text-brand-600 px-6 py-3 rounded-xl font-bold hover:bg-brand-50 transition">
-                            डिजिटल उत्पादनहरू हेर्नुहोस्
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Profile Card UI -->
-                <div class="relative flex justify-center">
-                    <div class="absolute inset-0 bg-brand-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                    <div class="relative bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 w-full max-w-sm">
-                        <div class="w-32 h-32 mx-auto bg-slate-200 rounded-full mb-6 border-4 border-white shadow-lg overflow-hidden flex items-center justify-center">
-                            <!-- Placeholder for Image -->
-                            <i class="fa-solid fa-user-tie text-6xl text-slate-400"></i>
-                        </div>
-                        <h3 class="text-2xl font-black text-center text-dark mb-1">Bhupendra Poudel</h3>
-                        <p class="text-sm font-semibold text-brand-600 text-center mb-6">Digital Educator & Content Creator</p>
-                        
-                        <div class="space-y-4 mb-8">
-                            <div class="flex items-center gap-3 text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
-                                <i class="fa-solid fa-location-dot text-brand-500 w-5 text-center"></i> 
-                                <span>धनकुटा, कोशी प्रदेश, नेपाल</span>
-                            </div>
-                            <div class="flex items-center gap-3 text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
-                                <i class="fa-solid fa-envelope text-brand-500 w-5 text-center"></i> 
-                                <a href="mailto:nayasoch567@gmail.com" class="hover:text-brand-600">nayasoch567@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <!-- Social Links -->
-                        <div class="flex justify-center gap-4 border-t border-slate-100 pt-6">
-                            <a href="https://www.facebook.com/vhupendra.poudel/" target="_blank" class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-lg"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/bhupendrapoudel123/" target="_blank" class="w-10 h-10 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition text-lg"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.tiktok.com/@bhupendrapoudel" target="_blank" class="w-10 h-10 rounded-full bg-slate-200 text-black flex items-center justify-center hover:bg-black hover:text-white transition text-lg"><i class="fa-brands fa-tiktok"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= 2. STORE (eBooks & Promo System) ================= -->
-        <section id="sec-store" class="view-section hidden w-full py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-black text-dark mb-4">प्रिमियम डिजिटल स्टोर</h2>
-                    <p class="text-slate-500 text-lg">पुस्तक किन्नुअघि 'Sample' पढ्न सक्नुहुन्छ।</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Product 1: AI Book -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition flex flex-col">
-                        <div class="h-56 bg-dark p-6 flex flex-col items-center justify-center text-center relative overflow-hidden">
-                            <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-                            <h3 class="text-white font-black text-3xl z-10 leading-tight">नेपालीमा AI:<br>सम्पूर्ण गाइड</h3>
-                        </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h4 class="font-bold text-lg text-dark mb-2">नेपालीमा AI: कृत्रिम बुद्धिमत्ताको सम्पूर्ण गाइड</h4>
-                            <p class="text-sm text-slate-500 mb-6 flex-grow">ChatGPT, Gemini र अन्य टुलहरू प्रयोग गरेर काम १० गुणा छिटो गर्ने प्रम्प्ट इन्जिनियरिङको सरल व्याख्या।</p>
-                            
-                            <!-- Promo Feature Button -->
-                            <button onclick="openPromo('ai')" class="w-full border border-brand-200 bg-brand-50 text-brand-700 py-2.5 rounded-lg text-sm font-bold mb-4 hover:bg-brand-100 transition">
-                                <i class="fa-regular fa-file-pdf mr-1"></i> Read Sample (प्रोमो हेर्नुहोस्)
-                            </button>
-
-                            <div class="flex items-center justify-between pt-4 border-t border-slate-200">
-                                <div><span class="text-2xl font-black text-dark">Rs. 350</span></div>
-                                <button onclick="addToCart('bk_ai_01', 'नेपालीमा AI eBook', 350)" class="bg-brand-600 text-white px-5 py-2.5 rounded-lg font-bold hover:bg-brand-700 transition shadow-md">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 2: Numerology -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition flex flex-col">
-                        <div class="h-56 bg-gradient-to-br from-purple-700 to-indigo-900 p-6 flex flex-col items-center justify-center text-center">
-                            <i class="fa-solid fa-mobile-screen text-4xl text-white mb-3"></i>
-                            <h3 class="text-white font-black text-2xl leading-tight">Mobile<br>Numerology</h3>
-                        </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h4 class="font-bold text-lg text-dark mb-2">Mobile Numerology Course (Video + Book)</h4>
-                            <p class="text-sm text-slate-500 mb-6 flex-grow">तपाईंको मोबाइल नम्बरले भाग्य कसरी निर्धारण गर्छ? Pair Score र Lucky Number छान्ने तरिका।</p>
-                            
-                            <button onclick="openPromo('num')" class="w-full border border-purple-200 bg-purple-50 text-purple-700 py-2.5 rounded-lg text-sm font-bold mb-4 hover:bg-purple-100 transition">
-                                <i class="fa-solid fa-play mr-1"></i> Watch Promo Video
-                            </button>
-
-                            <div class="flex items-center justify-between pt-4 border-t border-slate-200">
-                                <div><span class="text-2xl font-black text-dark">Rs. 500</span></div>
-                                <button onclick="addToCart('crs_num_01', 'Mobile Numerology Course', 500)" class="bg-brand-600 text-white px-5 py-2.5 rounded-lg font-bold hover:bg-brand-700 transition shadow-md">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= 3. LMS SYSTEM (My Courses) ================= -->
-        <section id="sec-lms" class="view-section hidden w-full py-16 bg-slate-100 min-h-screen">
-            <div class="max-w-5xl mx-auto px-4">
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
-                    <div class="flex justify-between items-end mb-8 pb-6 border-b border-slate-100">
-                        <div>
-                            <h2 class="text-3xl font-black text-dark">My Learning Dashboard</h2>
-                            <p class="text-slate-500 text-sm mt-2">तपाईंले खरिद गर्नुभएका सबै कोर्स र किताबहरू यहाँ सुरक्षित छन्।</p>
-                        </div>
-                        <div class="hidden sm:block text-right">
-                            <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full"><i class="fa-solid fa-shield-check"></i> Secure Access Active</span>
-                        </div>
-                    </div>
-
-                    <!-- Course Item Mockup -->
-                    <div class="border border-slate-200 rounded-xl p-6 flex flex-col md:flex-row gap-6 mb-6">
-                        <div class="w-full md:w-48 h-32 bg-dark rounded-lg flex items-center justify-center text-white font-bold p-4 text-center">नेपालीमा AI</div>
-                        <div class="flex-grow">
-                            <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-xl font-bold text-dark">नेपालीमा AI: सम्पूर्ण गाइड</h3>
-                                <button class="text-brand-600 bg-brand-50 px-4 py-2 rounded-lg text-sm font-bold hover:bg-brand-100">
-                                    <i class="fa-solid fa-book-open"></i> Read Now
-                                </button>
-                            </div>
-                            <p class="text-sm text-slate-500 mb-4">Author: Bhupendra Poudel</p>
-                            
-                            <!-- Progress Tracker -->
-                            <div class="w-full bg-slate-100 rounded-full h-2.5 mb-2">
-                                <div class="bg-brand-500 h-2.5 rounded-full" style="width: 35%"></div>
-                            </div>
-                            <div class="flex justify-between text-xs text-slate-500 font-semibold">
-                                <span>35% Completed</span>
-                                <span><i class="fa-solid fa-certificate text-slate-300"></i> Certificate Locked</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Security Alert -->
-                    <div class="bg-rose-50 border border-rose-100 rounded-lg p-4 flex gap-3 text-sm text-rose-800">
-                        <i class="fa-solid fa-lock text-rose-500 mt-0.5"></i>
-                        <p><strong>Device Security:</strong> यो सामग्री डाउनलोड गर्न वा कपि गर्न मिल्दैन। तपाईंको स्क्रिनमा 'Bhupendra Poudel' वाटरमार्क सक्रिय छ।</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= 4. AFFILIATE DASHBOARD ================= -->
-        <section id="sec-affiliate" class="view-section hidden w-full py-16 bg-dark text-white min-h-screen">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="mb-10">
-                    <h2 class="text-3xl md:text-4xl font-black mb-2">Partner / Affiliate Dashboard</h2>
-                    <p class="text-slate-400">वेबसाइटको लिंक सेयर गर्नुहोस् र हरेक बिक्रीमा अटोमेटिक <span class="text-green-400 font-bold">२०% कमिसन</span> कमाउनुहोस्।</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
-                        <p class="text-slate-400 text-sm font-bold mb-2">Total Clicks (भिजिटर)</p>
-                        <h3 class="text-4xl font-black">1,245</h3>
-                    </div>
-                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
-                        <p class="text-slate-400 text-sm font-bold mb-2">Successful Sales</p>
-                        <h3 class="text-4xl font-black text-brand-400">48</h3>
-                    </div>
-                    <div class="bg-gradient-to-br from-green-600 to-emerald-900 p-6 rounded-2xl border border-green-500">
-                        <p class="text-green-100 text-sm font-bold mb-2">Total Earnings (कमाइ)</p>
-                        <h3 class="text-4xl font-black text-white">Rs. 4,800</h3>
-                        <button class="mt-4 w-full bg-white/20 py-2 rounded-lg text-sm font-bold hover:bg-white/30 transition">Withdraw</button>
-                    </div>
-                </div>
-
-                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
-                    <h4 class="font-bold mb-4 text-lg">तपाईंको प्रबर्द्धन लिंक (Your Link)</h4>
-                    <div class="flex gap-3">
-                        <input type="text" readonly value="https://bhupendrapoudel77.com.np/store?ref=BP-TEST" class="flex-grow bg-slate-900 border border-slate-600 text-slate-300 px-4 py-3 rounded-lg outline-none font-mono text-sm">
-                        <button onclick="alert('Link Copied!')" class="bg-brand-500 hover:bg-brand-600 px-6 py-3 rounded-lg font-bold transition whitespace-nowrap">
-                            Copy Link
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= 5. CART, CHECKOUT & AUTOMATION ================= -->
-        <section id="sec-cart" class="view-section hidden w-full py-16 bg-white min-h-screen">
-            <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10">
-                
-                <!-- Left: Cart Items -->
-                <div class="lg:col-span-7">
-                    <h2 class="text-3xl font-black text-dark mb-6">Your Cart</h2>
-                    <div id="cart-container" class="space-y-4 mb-8">
-                        <!-- Items injected by JS -->
-                    </div>
-
-                    <!-- Email Automation Opt-in Feature -->
-                    <div class="bg-blue-50 border border-blue-200 p-4 rounded-xl flex gap-3 items-start">
-                        <input type="checkbox" checked class="mt-1 w-5 h-5 accent-brand-600">
-                        <div>
-                            <h4 class="font-bold text-blue-900 text-sm">Automated Updates Active</h4>
-                            <p class="text-xs text-blue-700 mt-1">तपाईंको अर्डर कन्फर्म हुनासाथ अटोमेटिक इमेल (Welcome Email) आउनेछ र नयाँ कोर्स आउँदा जानकारी पाइनेछ।</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Checkout & Coupons -->
-                <div class="lg:col-span-5">
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 sticky top-24">
-                        
-                        <!-- Coupon System -->
-                        <div class="mb-6 pb-6 border-b border-slate-200">
-                            <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Have a Coupon?</label>
-                            <div class="flex gap-2">
-                                <input type="text" id="coupon-input" placeholder="Enter code" class="w-full border border-slate-300 px-3 py-2 rounded-lg uppercase text-sm">
-                                <button onclick="applyCoupon()" class="bg-dark text-white px-4 py-2 rounded-lg font-bold text-sm">Apply</button>
-                            </div>
-                            <p id="coupon-msg" class="text-xs mt-2 font-bold"></p>
-                        </div>
-
-                        <!-- Summary -->
-                        <div class="space-y-2 text-sm text-slate-600 mb-6">
-                            <div class="flex justify-between"><span>Subtotal</span> <span id="sum-subtotal" class="font-bold text-dark">Rs. 0</span></div>
-                            <div class="flex justify-between text-green-600"><span>Discount</span> <span id="sum-discount">- Rs. 0</span></div>
-                            <div class="flex justify-between text-xl font-black text-dark pt-3 border-t border-slate-200">
-                                <span>Total</span> <span id="sum-total" class="text-brand-600">Rs. 0</span>
-                            </div>
-                        </div>
-
-                        <!-- Firebase Form -->
-                        <form onsubmit="submitOrder(event)" class="space-y-4">
-                            <input type="text" id="c-name" required placeholder="तपाईंको पूरा नाम" class="w-full bg-white border border-slate-300 px-4 py-3 rounded-lg outline-none focus:border-brand-500">
-                            <input type="email" id="c-email" required placeholder="तपाईंको इमेल (LMS Access को लागि)" class="w-full bg-white border border-slate-300 px-4 py-3 rounded-lg outline-none focus:border-brand-500">
-                            
-                            <div class="bg-green-100 p-4 rounded-lg border border-green-300 text-center">
-                                <p class="text-xs font-bold text-green-800 mb-1">eSewa / Khalti Send To:</p>
-                                <p class="text-xl font-black text-green-700 mb-2">9842116209</p>
-                                <input type="text" id="c-txn" required placeholder="Transaction ID यहाँ राख्नुहोस्" class="w-full bg-white border border-green-400 px-3 py-2 rounded text-sm outline-none">
-                            </div>
-                            
-                            <button type="submit" id="btn-submit" class="w-full bg-brand-600 text-white py-4 rounded-xl font-black text-lg hover:bg-brand-700 transition shadow-lg">
-                                Place Secure Order
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- PROMO MODAL -->
-    <div id="promo-modal" class="fixed inset-0 bg-dark/90 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4">
-        <div class="bg-white w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl">
-            <div class="flex justify-between items-center p-4 border-b border-slate-100 bg-slate-50">
-                <h3 class="font-bold text-dark text-lg"><i class="fa-solid fa-circle-play text-brand-500 mr-2"></i> Free Preview</h3>
-                <button onclick="document.getElementById('promo-modal').classList.add('hidden')" class="text-slate-400 hover:text-red-500 text-xl"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-10 text-center bg-slate-100 h-64 flex flex-col items-center justify-center">
-                <i class="fa-solid fa-lock text-4xl text-slate-300 mb-4"></i>
-                <h4 class="font-bold text-dark mb-2">This is a Secure Promo View</h4>
-                <p class="text-sm text-slate-500">यहाँ इबुकको पहिलो १० पाना वा कोर्सको इन्ट्रो भिडियो देखिनेछ।<br>बाँकी कन्टेन्ट हेर्न अर्डर गर्नुपर्नेछ।</p>
-            </div>
-        </div>
+        <button class="btn-primary" onclick="calcBirth()"><i class="fas fa-search"></i> मेरो ऊर्जा हेर्नुहोस्</button>
+      </div>
+      <div id="res-birth" style="display:none;"></div>
     </div>
 
-    <!-- System Scripts -->
-    <script>
-        // SPA Navigation
-        function navigate(id) {
-            document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden'));
-            document.getElementById('sec-' + id).classList.remove('hidden');
-            document.querySelectorAll('.nav-btn').forEach(btn => {
-                btn.classList.remove('text-brand-600', 'bg-brand-50'); btn.classList.add('text-slate-600');
-            });
-            event.currentTarget.classList.add('text-brand-600', 'bg-brand-50');
-            window.scrollTo(0,0);
-        }
+    <!-- SUB-TAB: MOBILE (PREMIUM) -->
+    <div id="num-mobile" class="sub-tab-content">
+      <div class="card">
+        <div class="card-title"><i class="fas fa-mobile-alt"></i> प्रिमियम मोबाइल विश्लेषण (Layer-wise)</div>
+        <div class="panel">
+          <p>यो प्रणाली ५५ दिने Advanced Numerology Course को नियमहरूमा आधारित छ। यसले तपाईको मोबाइलको तहगत ऊर्जा र ८१ संयोजन (Combinations) को गहिरो अर्थ दिन्छ।</p>
+        </div>
+        <div class="grid-2">
+          <div class="input-group">
+            <label>१०-अंकको मोबाइल नम्बर:</label>
+            <input type="text" id="m-num" class="input-control" placeholder="9876543210" maxlength="10">
+          </div>
+          <div class="input-group" style="display:flex; align-items:flex-end;">
+            <button class="btn-primary" onclick="calcMobile()"><i class="fas fa-bolt"></i> गहिरो विश्लेषण गर्नुहोस्</button>
+          </div>
+        </div>
+      </div>
+      <div id="res-mobile" style="display:none;"></div>
+    </div>
 
-        // Promo System
-        function openPromo(type) { document.getElementById('promo-modal').classList.remove('hidden'); }
+    <!-- SUB-TAB: NAME AI (PREMIUM) -->
+    <div id="num-name" class="sub-tab-content">
+      <div class="card">
+        <div class="card-title"><i class="fas fa-spell-check"></i> नाम सुधार प्रणाली (Chaldean)</div>
+        <div class="panel">
+          <p>नामको कम्पन जन्म मितिको भाग्यांकसँग मिल्नुपर्छ। यदि मिल्दैन भने, यो AI ले नामको स्पेलिङमा कुन अक्षर थप्दा शुभ हुन्छ भनेर सटिक सुझाव दिन्छ।</p>
+        </div>
+        <div class="grid-2">
+          <div class="input-group">
+            <label>वर्तमान नाम (English):</label>
+            <input type="text" id="n-name" class="input-control" placeholder="e.g. Ram Nepal">
+          </div>
+          <div class="input-group">
+            <label>तपाईंको शुभ अंक (Target Number):</label>
+            <select id="n-target" class="input-control">
+              <option value="1">1 (सूर्य - नेतृत्व)</option>
+              <option value="5" selected>5 (बुध - व्यापार/सञ्चार)</option>
+              <option value="6">6 (शुक्र - सुख/धन)</option>
+              <option value="9">9 (मंगल - साहस)</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn-primary" onclick="calcNameAI()"><i class="fas fa-magic"></i> AI सुझाव खोज्नुहोस्</button>
+        <div id="res-nameai" style="margin-top:20px; display:none;"></div>
+      </div>
+    </div>
 
-        // Cart & Coupon Engine
-        let cart = []; let discount = 0;
+    <!-- SUB-TAB: REMEDIES (PREMIUM) -->
+    <div id="num-remedy" class="sub-tab-content">
+      <div class="card">
+        <div class="card-title"><i class="fas fa-leaf"></i> वैदिक उपाय र समाधान</div>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:15px;">पहिले जन्म विश्लेषण ट्याबमा आफ्नो जन्म मिति हाल्नुहोस्, त्यसपछि यहाँ छुटेका अंकहरू (Missing Numbers) को अटोमेटिक समाधान देखिनेछ।</p>
+        <div id="res-remedy"></div>
+      </div>
+    </div>
+  </section>
 
-        function addToCart(id, name, price) {
-            if(cart.find(i => i.id === id)) return alert("यो आइटम पहिल्यै कार्टमा छ!");
-            cart.push({id, name, price}); updateCart(); alert(`"${name}" कार्टमा थपियो।`);
-        }
+  <!-- ==================== TAB 3: DIGITAL STORE ==================== -->
+  <section id="tab-store" class="tab-content">
+    <div class="card">
+      <div class="card-title"><i class="fas fa-shopping-cart"></i> प्रिमियम डिजिटल स्टोर</div>
+      <div class="grid-2">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-img"><i class="fas fa-book"></i><span style="position:absolute; top:10px; right:10px; background:var(--accent-red); font-size:0.6rem; color:#fff; padding:3px 8px; border-radius:10px; font-family:sans-serif;">Best Seller</span></div>
+          <div class="product-info">
+            <h3 style="color:var(--gold); margin-bottom:5px; font-size:1.1rem;">नेपालीमा AI: सम्पूर्ण गाइड</h3>
+            <p style="font-size:0.8rem; color:var(--text-muted);">च्याटजीपीटी र जेमिनी प्रयोग गरेर व्यापार बढाउने तरिका।</p>
+            <div class="price">Rs. 499</div>
+            <div style="display:flex; gap:10px;">
+              <button class="btn-primary" style="flex:1; padding:8px;" onclick="alert('कार्टमा थपियो!')">Add to Cart</button>
+              <button class="btn-primary" style="flex:1; padding:8px; background:var(--bg-main); border:1px solid var(--gold); color:var(--gold);" onclick="alert('Read Free Sample Modal Opens Here.')">Read Sample</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-img"><i class="fas fa-video"></i></div>
+          <div class="product-info">
+            <h3 style="color:var(--gold); margin-bottom:5px; font-size:1.1rem;">५५ दिने Advanced Numerology</h3>
+            <p style="font-size:0.8rem; color:var(--text-muted);">मास्टर भिडियो कोर्स र पिडिएफ नोट्स (Life Time Access)।</p>
+            <div class="price">Rs. 2,999</div>
+            <button class="btn-primary" style="width:100%;" onclick="alert('Enrollment Process Initiated.')">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        function applyCoupon() {
-            const code = document.getElementById('coupon-input').value.trim().toUpperCase();
-            const msg = document.getElementById('coupon-msg');
-            if(cart.length === 0) return msg.innerHTML = "<span class='text-rose-500'>पहिले कार्टमा सामान हाल्नुहोस्।</span>";
-            
-            if(code === 'DASHAIN50') {
-                discount = 50; msg.innerHTML = "<span class='text-green-600'>✅ कुपन लागू भयो! रु. ५० छुट।</span>";
-            } else {
-                discount = 0; msg.innerHTML = "<span class='text-rose-500'>❌ कुपन मिलेन।</span>";
-            }
-            updateCart();
-        }
+  <!-- ==================== TAB 4: LMS (MY COURSES) ==================== -->
+  <section id="tab-lms" class="tab-content">
+    <div class="card">
+      <div class="card-title"><i class="fas fa-graduation-cap"></i> मेरो लर्निङ ड्यासबोर्ड (LMS)</div>
+      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">तपाईंले खरिद गर्नुभएका कोर्स र इबुकहरू यहाँ सुरक्षित छन्।</p>
+      
+      <div style="background:var(--bg-panel); border:1px solid var(--border); border-radius:10px; padding:15px; margin-bottom:15px;">
+        <h4 style="color:var(--gold-light); margin-bottom:10px;">५५ दिने Advanced Numerology Course</h4>
+        <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted);">
+          <span>प्रगति (Progress):</span><span>४५% सम्पन्न</span>
+        </div>
+        <div class="course-progress"><div class="progress-bar"></div></div>
+        <button class="btn-primary" style="padding:8px 15px; width:auto; font-size:0.85rem;"><i class="fas fa-play-circle"></i> कक्षा सुरु गर्नुहोस्</button>
+      </div>
 
-        function updateCart() {
-            document.getElementById('cart-count').innerText = cart.length;
-            const container = document.getElementById('cart-container');
-            if(cart.length === 0) {
-                container.innerHTML = `<div class="p-8 text-center text-slate-400 bg-slate-50 rounded-xl border border-slate-100">कार्ट खाली छ।</div>`;
-                document.getElementById('sum-subtotal').innerText = 'Rs. 0'; document.getElementById('sum-total').innerText = 'Rs. 0'; return;
-            }
-            
-            let html = '', subtotal = 0;
-            cart.forEach((item, i) => {
-                subtotal += item.price;
-                html += `<div class="flex justify-between items-center p-4 bg-slate-50 border border-slate-100 rounded-xl">
-                    <div><h4 class="font-bold text-dark text-sm">${item.name}</h4><p class="text-xs text-brand-600">Digital Product</p></div>
-                    <div class="text-right"><p class="font-bold text-dark">Rs. ${item.price}</p>
-                    <button onclick="cart.splice(${i},1); updateCart();" class="text-[10px] uppercase font-bold text-rose-500 hover:underline">Remove</button></div>
-                </div>`;
-            });
-            container.innerHTML = html;
-            document.getElementById('sum-subtotal').innerText = `Rs. ${subtotal}`;
-            document.getElementById('sum-discount').innerText = `- Rs. ${discount}`;
-            document.getElementById('sum-total').innerText = `Rs. ${subtotal - discount}`;
-        }
+      <div style="background:var(--bg-panel); border:1px solid var(--border); border-radius:10px; padding:15px;">
+        <h4 style="color:var(--gold-light); margin-bottom:10px;">नेपालीमा AI (eBook)</h4>
+        <button class="btn-primary" style="padding:8px 15px; width:auto; font-size:0.85rem; background:var(--bg-main); border:1px solid var(--gold); color:var(--gold);"><i class="fas fa-file-pdf"></i> सुरक्षित PDF खोल्नुहोस्</button>
+      </div>
+    </div>
+  </section>
 
-        // Firebase Submission
-        async function submitOrder(e) {
-            e.preventDefault();
-            if(cart.length === 0) return alert("कार्ट खाली छ!");
-            const btn = document.getElementById('btn-submit');
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...'; btn.disabled = true;
+  <!-- ==================== TAB 5: AFFILIATE ==================== -->
+  <section id="tab-affiliate" class="tab-content">
+    <div class="card">
+      <div class="card-title"><i class="fas fa-handshake"></i> एफिलिएट पार्टनर ड्यासबोर्ड</div>
+      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">तपाईंको विशेष लिंक सेयर गरेर हाम्रा कोर्स र किताब बिक्री गराउनुहोस् र हरेक बिक्रीमा ३०% सम्म कमिसन कमाउनुहोस्।</p>
+      
+      <div class="grid-3" style="margin-bottom:20px;">
+        <div class="stat-box">
+          <div style="font-size:0.8rem; color:var(--text-muted);">कुल भिजिटर</div>
+          <div class="stat-val">142</div>
+        </div>
+        <div class="stat-box">
+          <div style="font-size:0.8rem; color:var(--text-muted);">सफल बिक्री</div>
+          <div class="stat-val" style="color:var(--accent-blue);">12</div>
+        </div>
+        <div class="stat-box">
+          <div style="font-size:0.8rem; color:var(--text-muted);">कमाई (NPR)</div>
+          <div class="stat-val" style="color:var(--accent-green);">3,600</div>
+        </div>
+      </div>
 
-            const sub = cart.reduce((s, i) => s + i.price, 0);
-            const data = {
-                name: document.getElementById('c-name').value, email: document.getElementById('c-email').value, txn: document.getElementById('c-txn').value,
-                items: cart, total: sub - discount, status: "Pending Verification", date: new Date().toISOString()
-            };
+      <div class="input-group">
+        <label>तपाईंको एफिलिएट लिंक:</label>
+        <div style="display:flex; gap:10px;">
+          <input type="text" class="input-control" value="https://bhupendrapoudel.com/?ref=user123" readonly>
+          <button class="btn-primary" style="width:auto; padding:0 20px;"><i class="fas fa-copy"></i> Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            try {
-                await window.addDoc(window.collection(window.db, "orders"), data);
-                alert("🎉 तपाईंको अर्डर डाटाबेसमा सेभ भयो! भेरिफाई भएपछि इमेल आउनेछ।");
-                cart = []; discount = 0; e.target.reset(); updateCart(); navigate('lms');
-            } catch (err) { alert("Error connecting to database."); }
-            finally { btn.innerHTML = 'Place Secure Order'; btn.disabled = false; }
-        }
-        updateCart();
-    </script>
+  <!-- ==================== TAB 6: BLOG / KNOWLEDGE ==================== -->
+  <section id="tab-blog" class="tab-content">
+    
+    <!-- Blog List View -->
+    <div id="blog-list-view">
+      <div class="card">
+        <div class="card-title"><i class="fas fa-newspaper"></i> ज्ञान र लेखहरू (Blogs)</div>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">दैनिक नयाँ ज्ञान, अंकशास्त्र, र एआई सम्बन्धी लेखहरू यहाँ पढ्नुहोस्।</p>
+        
+        <div id="dynamic-blog-container">
+          <!-- Blogs will be injected here by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Single Blog Reading View (Hidden by default) -->
+    <div id="single-blog-view" style="display:none;">
+      <button class="btn-primary" style="width:auto; padding:8px 15px; margin-bottom:20px; background:var(--bg-panel); color:var(--text-main); border:1px solid var(--border);" onclick="closeBlog()"><i class="fas fa-arrow-left"></i> पछाडि जानुहोस्</button>
+      
+      <div class="card">
+        <div class="single-blog-header">
+          <h1 class="single-blog-title" id="read-title">Title</h1>
+          <div class="single-blog-meta">
+            <span><i class="fas fa-user-edit"></i> भुपेन्द्र पौडेल</span>
+            <span id="read-date"><i class="fas fa-calendar-alt"></i> Date</span>
+          </div>
+        </div>
+        
+        <div id="read-video-container"></div>
+        
+        <div class="blog-text-content" id="read-content">
+          Content goes here...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TAB 7: SECRET ADMIN PANEL ==================== -->
+  <section id="tab-admin" class="tab-content">
+    <div class="card" style="border-color: var(--accent-red);">
+      <div class="card-title" style="color: var(--accent-red);"><i class="fas fa-user-shield"></i> एडमिन ड्यासबोर्ड (नयाँ ब्लग लेख्नुहोस्)</div>
+      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">यहाँबाट तपाईंले लेखेको ब्लग अटोमेटिक रूपमा 'ब्लग' सेक्सनमा गएर बस्नेछ।</p>
+      
+      <div class="input-group">
+        <label>ब्लगको शीर्षक (Title):</label>
+        <input type="text" id="admin-title" class="input-control" placeholder="जस्तै: Chaldean Numerology भनेको के हो?">
+      </div>
+      
+      <div class="input-group">
+        <label>छोटो जानकारी (Short Excerpt):</label>
+        <input type="text" id="admin-desc" class="input-control" placeholder="जस्तै: विश्वकै सबैभन्दा पुरानो प्रणालीको बारेमा जान्नुहोस्...">
+      </div>
+
+      <div class="input-group">
+        <label>YouTube भिडियो लिंक (छ भने मात्र):</label>
+        <input type="text" id="admin-yt" class="input-control" placeholder="जस्तै: https://www.youtube.com/watch?v=XXXXXX">
+      </div>
+
+      <div class="input-group">
+        <label>फोटोको लिंक (Image URL - वैकल्पिक):</label>
+        <input type="text" id="admin-image" class="input-control" placeholder="जस्तै: https://example.com/photo.jpg">
+      </div>
+
+      <div class="input-group">
+        <label>अडियोको लिंक (Audio URL - सुन्नको लागि):</label>
+        <input type="text" id="admin-audio" class="input-control" placeholder="जस्तै: https://example.com/audio.mp3">
+      </div>
+
+      <div class="input-group">
+        <label>मुख्य लेख (Full Content):</label>
+        <textarea id="admin-content" class="input-control" placeholder="तपाईंको पूरा ब्लग यहाँ टाइप गर्नुहोस्..."></textarea>
+      </div>
+
+      <button class="btn-primary" style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: #fff;" onclick="publishBlog()"><i class="fas fa-paper-plane"></i> ब्लग पब्लिस (Publish) गर्नुहोस्</button>
+    </div>
+  </section>
+
+</div> <!-- End Container -->
+
+
+<!-- ==================== PAYWALL MODAL ==================== -->
+<div class="overlay" id="paywall-modal">
+  <div class="modal">
+    <button class="close-btn" onclick="closePaywall()"><i class="fas fa-times"></i></button>
+    <i class="fas fa-lock" style="font-size:3rem; color:var(--gold); margin-bottom:15px;"></i>
+    <h2 style="font-family:var(--ff-title); color:var(--gold);">Premium Master Tool</h2>
+    <p style="font-size:0.85rem; color:var(--text-muted); margin:10px 0;">५५-दिने नियमहरूमा आधारित गहिरो मोबाइल विश्लेषण, तहगत अर्थ, र AI नाम सुधार प्रणाली प्रयोग गर्न प्रिमियम प्याकेज अनलक गर्नुहोस्।</p>
+    <div class="price-tag">Rs. 999 <span>/ Lifetime</span></div>
+    <button class="btn-primary" style="background:#60BB46; color:#fff;" onclick="alert('eSewa API Backend Required.')"><i class="fas fa-wallet"></i> eSewa बाट भुक्तानी गर्नुहोस्</button>
+    <div style="margin-top:20px; padding-top:15px; border-top:1px solid rgba(255,255,255,0.1);">
+      <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">अथवा पासकोड हाल्नुहोस् (Test: PRO25)</p>
+      <div style="display:flex; gap:10px;">
+        <input type="text" id="pw-input" class="input-control" placeholder="Passcode">
+        <button class="btn-primary" style="width:auto; padding:0 15px;" onclick="checkPasscode()">Unlock</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== AI CHATBOT ==================== -->
+<div class="chat-btn" onclick="toggleChat()"><i class="fas fa-robot"></i></div>
+<div class="chat-window" id="chat-win">
+  <div class="chat-hdr">
+    <span>🤖 AI Assistant</span>
+    <button style="background:none; border:none; font-size:1.2rem; cursor:pointer;" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="chat-body" id="c-body">
+    <div class="msg bot">नमस्ते! म भुपेन्द्र पौडेलको AI Assistant हुँ। म तपाईंलाई कोर्स, किताब, वा हाम्रो प्रिमियम सर्भिसको बारेमा कसरी मद्दत गर्न सक्छु?</div>
+  </div>
+  <div class="chat-footer">
+    <input type="text" id="c-input" class="chat-input" placeholder="सोध्नुहोस् (जस्तै: मूल्य कति हो?)..." onkeypress="if(event.key==='Enter') sendChat()">
+    <button class="chat-send" onclick="sendChat()"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- ==================== JAVASCRIPT LOGIC ==================== -->
+<script>
+// --- Data Dictionaries (Extracted from 55 Days & 66 Days PDFs) ---
+const planets = {
+  1:{n:'सूर्य', t:'नेतृत्व, आत्मविश्वास'}, 2:{n:'चन्द्र', t:'भावना, सहकार्य'}, 3:{n:'बृहस्पति', t:'ज्ञान, सिर्जना'},
+  4:{n:'राहु', t:'अनुशासन, कार्य'}, 5:{n:'बुध', t:'सञ्चार, व्यापार'}, 6:{n:'शुक्र', t:'सुख, परिवार'},
+  7:{n:'केतु', t:'अन्तर्ज्ञान, शोध'}, 8:{n:'शनि', t:'कर्म, ढिलाइ'}, 9:{n:'मंगल', t:'साहस, ऊर्जा'}
+};
+
+const chaldean = {A:1,I:1,J:1,Q:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5,X:5, U:6,V:6,W:6, O:7,Z:7, F:8,P:8};
+
+const mobPairs = {
+  "12": "पैसा बचत गर्ने बानी, आकर्षक व्यक्तित्व।", "21": "अनावश्यक खर्च, पैसाको बर्बादी। (बच्नुहोस्)",
+  "14": "खराब ऋण, दायित्व निम्त्याउन सक्छ। (बच्नुहोस्)", "15": "उत्कृष्ट सञ्चार। कम प्रयासमा राम्रो पैसा।",
+  "18": "कानुनी समस्या वा ढिलाइ। (बच्नुहोस्)", "24": "सकारात्मक सोच, वित्तीय सुधार।",
+  "28": "भावनात्मक रूपमा कमजोर बनाउँछ। एक्लोपन बढाउँछ। (बच्नुहोस्)", "45": "लामो प्रयोगले अस्पताल वा कानुनी समस्या। (बच्नुहोस्)",
+  "46": "छाला वा मुत्रप्रणाली (UTI) को समस्या हुन सक्छ। (बच्नुहोस्)", "48": "प्रयास अनुसार न्यून परिणाम। (बच्नुहोस्)",
+  "56": "पैसा, परिवार र शेयर बजारको लागि धेरै राम्रो।", "67": "दम्पतीबीच विचारमा भिन्नता। (बच्नुहोस्)",
+  "55": "सबैका लागि अति उत्कृष्ट। जीवनका हरेक पक्षमा शक्तिशाली।", "66": "व्यक्तित्वमा आकर्षण, नगद प्रवाहमा वृद्धि।",
+  "88": "रियल इस्टेट वा धातुको व्यापारको लागि राम्रो।"
+};
+
+const missingRemedies = {
+  1: "सूर्यलाई जल चढाउनुहोस्। बाबुको सम्मान गर्नुहोस्।", 2: "शिवलिङ्गमा दूध अर्पण गर्नुहोस्। आमाको सम्मान गर्नुहोस्।",
+  3: "बिहीबार निधारमा बेसारको टीका लगाउनुहोस्।", 4: "सामान व्यवस्थित राख्नुहोस्। सडकका कुकुरलाई खाना खुवाउनुहोस्।",
+  5: "उत्तर दिशामा मनी प्लान्ट राख्नुहोस्। गाईलाई हरियो घाँस खुवाउनुहोस्।", 6: "सुगन्ध (Perfume) प्रयोग गर्नुहोस्। परिवारसँग समय बिताउनुहोस्।",
+  7: "ध्यान (Meditation) गर्नुहोस्। चाँदीको घडी लगाउनुहोस्।", 8: "शनिबार छायादान गर्नुहोस्। गरिबलाई सहयोग गर्नुहोस्।",
+  9: "मंगलबार हनुमान चालीसा पाठ गर्नुहोस्।"
+};
+
+// --- System State ---
+let isProUnlocked = false;
+let currentMissing = []; 
+
+// --- Tab Navigation ---
+function switchMainTab(tabId, btn) {
+  document.querySelectorAll('.tab-content').forEach(el=>el.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(el=>el.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  btn.classList.add('active');
+  
+  // If blog tab is clicked, render blogs
+  if(tabId === 'tab-blog') {
+    document.getElementById('blog-list-view').style.display = 'block';
+    document.getElementById('single-blog-view').style.display = 'none';
+    renderBlogs();
+  }
+}
+
+function switchSubTab(tabId, btn) {
+  if(['num-mobile', 'num-name', 'num-remedy'].includes(tabId) && !isProUnlocked) {
+    document.getElementById('paywall-modal').style.display = 'flex';
+    return;
+  }
+  document.querySelectorAll('.sub-tab-content').forEach(el=>el.classList.remove('active'));
+  document.querySelectorAll('.sub-btn').forEach(el=>el.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  btn.classList.add('active');
+}
+
+// --- Paywall Logic ---
+function closePaywall() { document.getElementById('paywall-modal').style.display = 'none'; }
+function checkPasscode() {
+  if(document.getElementById('pw-input').value.toUpperCase() === 'PRO25') {
+    isProUnlocked = true;
+    document.querySelectorAll('.p-lock').forEach(el=>el.style.display='none');
+    closePaywall();
+    alert("Pro Version Unlocked Successfully!");
+  } else { alert("Invalid Passcode."); }
+}
+
+function reduceNum(n) {
+  n = parseInt(n)||0;
+  while(n>9) n = String(n).split('').reduce((a,b)=>a+parseInt(b),0);
+  return n;
+}
+
+// --- Numerology Logic: Birth & LoShu ---
+function calcBirth() {
+  const name = document.getElementById('b-name').value.trim();
+  const dob = document.getElementById('b-dob').value.replace(/\D/g,'');
+  if(!name || dob.length!==8) { alert('सही नाम र जन्म मिति (DD-MM-YYYY) भर्नुहोस्।'); return; }
+  
+  const ml = reduceNum(dob.substring(0,2));
+  const bh = reduceNum(dob);
+  let nmTot=0; name.toUpperCase().replace(/[^A-Z]/g,'').split('').forEach(c=> nmTot+=chaldean[c]||0);
+  const nm = reduceNum(nmTot);
+
+  const counts = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0};
+  for(let c of dob) { if(counts[c]!==undefined) counts[c]++; }
+  currentMissing = Object.keys(counts).filter(k=>counts[k]===0).map(Number);
+  
+  const lLayout = [[4,9,2],[3,5,7],[8,1,6]];
+  let lHtml = '<div class="loshu-wrapper"><div class="loshu-grid">';
+  for(let row of lLayout) {
+    for(let n of row) {
+      const c = counts[n];
+      const cls = c===0?'empty':c>1?'multiple':'';
+      let dots=''; for(let i=0;i<Math.min(c,3);i++) dots+=`<div class="l-dot"></div>`;
+      lHtml += `<div class="l-cell ${cls}">${n}<div class="l-dots">${dots}</div></div>`;
+    }
+  }
+  lHtml += '</div></div>';
+
+  let html = `
+    <div class="n-grid">
+      <div class="n-box"><div class="n-box-lbl">मूलांक (Birth)</div><div class="n-box-val">${ml}</div><div class="n-box-desc">${planets[ml].n}</div></div>
+      <div class="n-box"><div class="n-box-lbl">भाग्यांक (Destiny)</div><div class="n-box-val">${bh}</div><div class="n-box-desc">${planets[bh].n}</div></div>
+      <div class="n-box"><div class="n-box-lbl">नामांक (Name)</div><div class="n-box-val">${nm}</div><div class="n-box-desc">${planets[nm]?.n||''}</div></div>
+    </div>
+    <h4 style="color:var(--gold-light);text-align:center;margin-top:20px;">तपाईंको लो-शु ग्रिड (Lo-Shu Grid)</h4>
+    ${lHtml}
+  `;
+  document.getElementById('res-birth').innerHTML = html;
+  document.getElementById('res-birth').style.display = 'block';
+
+  document.getElementById('n-name').value = name;
+  let remHtml = '';
+  currentMissing.forEach(n => {
+    remHtml += `<div class="panel" style="border-left-color:var(--accent-red)"><h4 style="color:var(--accent-red)">अंक ${n} (${planets[n].n}) को उपाय</h4><p>${missingRemedies[n]}</p></div>`;
+  });
+  if(!remHtml) remHtml = '<div class="panel green"><h4>✅ सन्तुलित</h4><p>तपाईंको ग्रिडमा सबै अंकहरू सन्तुलित छन्।</p></div>';
+  document.getElementById('res-remedy').innerHTML = remHtml;
+}
+
+// --- Numerology Logic: Mobile Pro ---
+function calcMobile() {
+  const mob = document.getElementById('m-num').value.replace(/\D/g,'');
+  if(mob.length!==10) { alert('१० अंकको मोबाइल नम्बर हाल्नुहोस्।'); return; }
+
+  let tot=0; let dHtml=''; let bc=0, mc=0;
+  for(let i=0; i<10; i++) {
+    const d=parseInt(mob[i]); tot+=d;
+    let cls='neu';
+    if([1,5,6,9].includes(d)){ cls='good'; bc++; }
+    else if([4,8].includes(d)){ cls='bad'; mc++; }
+    dHtml += `<div class="m-d ${cls}">${d}<div class="m-i">P${i+1}</div></div>`;
+  }
+  const root = reduceNum(tot);
+
+  const layers = [
+    {n:"Layer 1: बाह्य व्यक्तित्व", d:mob.substring(0,2)},
+    {n:"Layer 2: मानसिक अवस्था", d:mob.substring(2,4)},
+    {n:"Layer 3: कार्य क्षमता", d:mob.substring(4,6)},
+    {n:"Layer 4: सम्बन्ध", d:mob.substring(6,8)},
+    {n:"Layer 5: अन्तिम भाग्य", d:mob.substring(8,10)}
+  ];
+  let layerHtml = '<div class="grid-2" style="margin-top:15px;">';
+  layers.forEach(l => {
+    let pairMean = mobPairs[l.d] ? mobPairs[l.d].split('.')[0] : `ऊर्जा: ${planets[reduceNum(parseInt(l.d[0])+parseInt(l.d[1]))]?.n || 'सन्तुलित'}`;
+    layerHtml += `<div class="panel" style="margin:0;"><h4 style="font-size:0.85rem; display:flex; justify-content:space-between;"><span>${l.n}</span> <span style="font-family:sans-serif; color:var(--text-main);">${l.d}</span></h4><p style="font-size:0.75rem;">${pairMean}</p></div>`;
+  });
+  layerHtml += '</div>';
+
+  let alerts = '';
+  const tenth = mob[9];
+  if(tenth==='4'||tenth==='8') alerts += `<div class="panel red"><h4>⚠️ अन्तिम अंक दोष (${tenth})</h4><p>अन्तिम स्थानमा ४ वा ८ हुनाले मिहिनेत अनुसार प्रतिफल नपाइने र काममा सधैं ढिलाइ हुने गर्छ।</p></div>`;
+  if(mob.includes('46')||mob.includes('64')) alerts += `<div class="panel red"><h4>⚠️ स्वास्थ्य अलर्ट (46/64)</h4><p>यसले छाला वा मुत्रप्रणाली सम्बन्धी समस्या ल्याउन सक्छ।</p></div>`;
+  if(!alerts) alerts = `<div class="panel green"><h4>✅ सुरक्षित</h4><p>कुनै गम्भीर नकारात्मक दोष भेटिएन।</p></div>`;
+
+  let html = `
+    <div class="card">
+      <div class="card-title"><i class="fas fa-wave-square"></i> ऊर्जा हस्ताक्षर (Energy Signature)</div>
+      <div class="m-digits">${dHtml}</div>
+      <div class="n-grid">
+        <div class="n-box"><div class="n-box-lbl">मोबाइल मूल</div><div class="n-box-val">${root}</div><div class="n-box-desc">${planets[root]?planets[root].n:''}</div></div>
+        <div class="n-box" style="border-color:var(--accent-green)"><div class="n-box-lbl" style="color:var(--accent-green)">शुभ अंक</div><div class="n-box-val" style="color:var(--accent-green)">${bc}</div></div>
+        <div class="n-box" style="border-color:var(--accent-red)"><div class="n-box-lbl" style="color:var(--accent-red)">अशुभ अंक</div><div class="n-box-val" style="color:var(--accent-red)">${mc}</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><i class="fas fa-exclamation-triangle"></i> विशेष ध्यान दिनुपर्ने (Alerts)</div>
+      ${alerts}
+    </div>
+    <div class="card">
+      <div class="card-title"><i class="fas fa-layer-group"></i> जीवनका ५ तह (Layer Analysis)</div>
+      ${layerHtml}
+    </div>
+  `;
+  document.getElementById('res-mobile').innerHTML = html;
+  document.getElementById('res-mobile').style.display = 'block';
+}
+
+// --- Numerology Logic: Name AI ---
+function calcNameAI() {
+  const name = document.getElementById('n-name').value.trim().toUpperCase();
+  const tgt = parseInt(document.getElementById('n-target').value);
+  if(!name) return;
+
+  let curTot=0; name.replace(/[^A-Z]/g,'').split('').forEach(c=> curTot+=chaldean[c]||0);
+  const curRed = reduceNum(curTot);
+
+  let html = `<div class="panel"><h4>वर्तमान अवस्था</h4><p>नाम: <strong>${name}</strong> | योगफल: <strong>${curRed}</strong></p></div>`;
+
+  if(curRed === tgt) {
+    html += `<div class="panel green"><h4>✅ बधाई छ!</h4><p>नाम पहिले नै शुभ अंक ${tgt} मा छ।</p></div>`;
+  } else {
+    html += `<h4 style="color:var(--gold-light); margin:15px 0 10px; font-size:0.9rem;">शुभ अंक ${tgt} पुग्न थप्न सकिने अक्षरहरू:</h4><div class="n-grid">`;
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').forEach(l => {
+      const tName = name.replace(/\s+/g,'') + l;
+      let tTot=0; tName.split('').forEach(c=> tTot+=chaldean[c]||0);
+      if(reduceNum(tTot) === tgt) {
+        html += `<div class="n-box"><div class="n-box-val">${l}</div><p style="font-size:0.75rem; color:var(--text-muted); margin-top:5px;">Value: ${chaldean[l]}</p></div>`;
+      }
+    });
+    html += `</div>`;
+  }
+  document.getElementById('res-nameai').innerHTML = html;
+  document.getElementById('res-nameai').style.display = 'block';
+}
+
+// --- AI Chatbot Logic ---
+function toggleChat() {
+  const w = document.getElementById('chat-win');
+  w.style.display = w.style.display === 'flex' ? 'none' : 'flex';
+}
+function sendChat() {
+  const input = document.getElementById('c-input');
+  const txt = input.value.trim();
+  if(!txt) return;
+  const body = document.getElementById('c-body');
+  body.innerHTML += `<div class="msg user">${txt}</div>`;
+  input.value = ''; body.scrollTop = body.scrollHeight;
+
+  const tId = 'typing-'+Date.now();
+  body.innerHTML += `<div class="msg bot" id="${tId}">सोच्दै छु... <i class="fas fa-spinner fa-spin"></i></div>`;
+  body.scrollTop = body.scrollHeight;
+
+  setTimeout(()=>{
+    document.getElementById(tId).remove();
+    body.innerHTML += `<div class="msg bot">${getBotReply(txt.toLowerCase())}</div>`;
+    body.scrollTop = body.scrollHeight;
+  }, 1000);
+}
+function getBotReply(m) {
+  if(m.includes('किताब')||m.includes('बुक')) return 'हाम्रो "नेपालीमा AI" इबुक स्टोर ट्याबमा उपलब्ध छ। मूल्य Rs. 499 हो।';
+  if(m.includes('कोर्स')||m.includes('क्लास')) return '५५ दिने Advanced Numerology कोर्स उपलब्ध छ। स्टोरमा गएर Enroll गर्न सक्नुहुन्छ (Rs. 2999)।';
+  if(m.includes('मूल्य')||m.includes('पैसा')) return 'प्रिमियम मोबाइल र नाम सुधार प्रणालीको लाइफटाइम एक्सेस मात्र Rs. 999 हो।';
+  if(m.includes('सम्पर्क')||m.includes('नम्बर')||m.includes('फोन')) return 'तपाईंले मलाई WhatsApp 9842116209 मा सीधै सम्पर्क गर्न सक्नुहुन्छ।';
+  if(m.includes('कुपन')||m.includes('पासकोड')) return 'अहिले प्रिमियम टुल अनलक गर्न PRO25 पासकोड प्रयोग गर्न सक्नुहुन्छ।';
+  return 'माफ गर्नुहोला, मैले बुझिनँ। कृपया "किताब", "कोर्स", "मूल्य", वा "सम्पर्क" सँग सम्बन्धित प्रश्न सोध्नुहोला।';
+}
+
+
+// --- BLOG CMS LOGIC ---
+
+// Default Initial Blogs (if none in localStorage)
+const defaultBlogs = [
+  {
+    id: 1,
+    title: "Chaldean Numerology भनेको के हो?",
+    desc: "विश्वकै सबैभन्दा पुरानो र सटीक अंकशास्त्र प्रणालीको बारेमा जान्नुहोस्। बलिउडमा किन नाम परिवर्तन गरिन्छ?",
+    ytLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Example Link
+    content: "Chaldean Numerology प्राचीन बेबिलोनबाट सुरु भएको हो...\nयसले ध्वनिको कम्पन (Sound Vibration) मा विश्वास गर्छ।",
+    date: "2023-10-25"
+  }
+];
+
+// Helper to extract YouTube ID
+function getYTId(url) {
+  if(!url) return null;
+  let match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
+  return (match && match[1]) ? match[1] : null;
+}
+
+// 1. Get Blogs from LocalStorage
+function getBlogs() {
+  let saved = localStorage.getItem('bhup_blogs');
+  if(saved) {
+    return JSON.parse(saved);
+  } else {
+    // Save defaults and return
+    localStorage.setItem('bhup_blogs', JSON.stringify(defaultBlogs));
+    return defaultBlogs;
+  }
+}
+
+// 2. Publish New Blog (Admin)
+function publishBlog() {
+  const title = document.getElementById('admin-title').value.trim();
+  const desc = document.getElementById('admin-desc').value.trim();
+  const yt = document.getElementById('admin-yt').value.trim();
+  const img = document.getElementById('admin-image').value.trim();
+  const audio = document.getElementById('admin-audio').value.trim();
+  const content = document.getElementById('admin-content').value.trim();
+
+  if(!title || !content) {
+    alert("कृपया कम्तीमा शीर्षक र मुख्य लेख भर्नुहोस्!");
+    return;
+  }
+
+  let blogs = getBlogs();
+  let newBlog = {
+    id: Date.now(),
+    title: title,
+    desc: desc,
+    ytLink: yt,
+    imgLink: img,
+    audioLink: audio,
+    content: content,
+    date: new Date().toISOString().split('T')[0]
+  };
+
+  blogs.unshift(newBlog); // Add to beginning
+  localStorage.setItem('bhup_blogs', JSON.stringify(blogs));
+
+  alert("तपाईंको ब्लग सफलतापूर्वक Publish भयो!");
+  
+  // Clear inputs
+  document.getElementById('admin-title').value = '';
+  document.getElementById('admin-desc').value = '';
+  document.getElementById('admin-yt').value = '';
+  document.getElementById('admin-image').value = '';
+  document.getElementById('admin-audio').value = '';
+  document.getElementById('admin-content').value = '';
+
+  // Switch to Blog tab to see it
+  document.querySelectorAll('.nav-btn')[5].click(); // Click Blog tab
+}
+
+// 3. Render Blog List
+function renderBlogs() {
+  const blogs = getBlogs();
+  const container = document.getElementById('dynamic-blog-container');
+  container.innerHTML = '';
+
+  if(blogs.length === 0) {
+    container.innerHTML = '<p style="color:var(--text-muted)">कुनै ब्लग भेटिएन।</p>';
+    return;
+  }
+
+  blogs.forEach(blog => {
+    let ytId = getYTId(blog.ytLink);
+    let imgHtml = '';
+    
+    if(blog.imgLink) {
+      imgHtml = `<div class="blog-img"><img src="${blog.imgLink}"></div>`;
+    } else if (ytId) {
+      imgHtml = `<div class="blog-img"><img src="https://img.youtube.com/vi/${ytId}/hqdefault.jpg"><i class="fas fa-play-circle play-btn"></i></div>`;
+    } else {
+      imgHtml = `<div class="blog-img"><i class="fas fa-pen-nib" style="font-size:2rem; color:var(--gold)"></i></div>`;
+    }
+
+    let card = document.createElement('div');
+    card.className = 'blog-card';
+    card.onclick = () => openSingleBlog(blog.id);
+    card.innerHTML = `
+      ${imgHtml}
+      <div style="flex:1;">
+        <h3 style="color:var(--gold-light); font-size:1rem; margin-bottom:5px;">${blog.title}</h3>
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:10px;">${blog.desc}</p>
+        <div style="display:flex; gap:10px; font-size:0.75rem;">
+          <span style="color:var(--text-muted);"><i class="fas fa-calendar"></i> ${blog.date}</span>
+          ${blog.audioLink ? `<span style="color:var(--accent-green);"><i class="fas fa-headphones"></i> Audio</span>` : ''}
+          ${ytId ? `<span style="color:var(--accent-red);"><i class="fab fa-youtube"></i> Video</span>` : ''}
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+// 4. Open Single Blog Reading View
+function openSingleBlog(id) {
+  const blogs = getBlogs();
+  const blog = blogs.find(b => b.id === id);
+  if(!blog) return;
+
+  // Hide list, show single view
+  document.getElementById('blog-list-view').style.display = 'none';
+  document.getElementById('single-blog-view').style.display = 'block';
+  
+  // Populate content
+  document.getElementById('read-title').innerText = blog.title;
+  document.getElementById('read-date').innerHTML = `<i class="fas fa-calendar-alt"></i> ${blog.date}`;
+  document.getElementById('read-content').innerText = blog.content;
+
+  // Handle Media (Image, Audio, YouTube Video)
+  const ytContainer = document.getElementById('read-video-container');
+  const ytId = getYTId(blog.ytLink);
+  let mediaHtml = '';
+
+  if(blog.imgLink) {
+    mediaHtml += `<img src="${blog.imgLink}" style="width:100%; max-height:400px; object-fit:cover; border-radius:10px; margin-bottom:20px; border:1px solid var(--border);">`;
+  }
+  
+  if(blog.audioLink) {
+    mediaHtml += `
+      <div style="background:var(--bg-panel); padding:15px; border-radius:10px; border:1px solid var(--gold); margin-bottom:20px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.5);">
+        <p style="margin-bottom:10px; color:var(--gold-light); font-size:0.95rem; font-weight:bold;"><i class="fas fa-headphones-alt"></i> यो ब्लग सुन्नुहोस् (Listen to this Article)</p>
+        <audio controls style="width:100%; height:40px; border-radius:20px;">
+          <source src="${blog.audioLink}" type="audio/mpeg">
+          तपाईंको ब्राउजरले अडियो सपोर्ट गर्दैन।
+        </audio>
+      </div>`;
+  }
+
+  if(ytId) {
+    mediaHtml += `<div class="yt-container"><iframe src="https://www.youtube.com/embed/${ytId}" frameborder="0" allowfullscreen></iframe></div>`;
+  }
+  
+  ytContainer.innerHTML = mediaHtml;
+}
+
+// 5. Close Single Blog
+function closeBlog() {
+  document.getElementById('single-blog-view').style.display = 'none';
+  document.getElementById('blog-list-view').style.display = 'block';
+}
+
+</script>
 </body>
 </html>
