@@ -1,1 +1,219 @@
 
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4f46e5">
+    
+    <title>Bhupendra Poudel | Digital Creator, Educator & Entrepreneur</title>
+    <meta name="description" content="ज्ञानलाई सिर्जनामा, सिर्जनालाई ब्रान्डमा र ब्रान्डलाई व्यवसायमा बदल्ने उत्कृष्ट प्लेटफर्म। AI, Digital Marketing, र Numerology सिक्नुहोस्।">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Firebase SDK Setup (तपाईंको आफ्नै डाटाबेस साँचो) -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+      import { getFirestore, collection, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+      import { getAuth } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+
+      // तपाईंले पठाउनुभएको Firebase Configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyA7m45u-qNcF09qdMp-wN0LfGV4IIZgzTI",
+        authDomain: "bhupendra-bookstore.firebaseapp.com",
+        projectId: "bhupendra-bookstore",
+        storageBucket: "bhupendra-bookstore.firebasestorage.app",
+        messagingSenderId: "112935091261",
+        appId: "1:112935091261:web:11caf9607bdf1019aafe54",
+        measurementId: "G-BV06NYZQC2"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      const auth = getAuth(app);
+
+      // ग्लोबल रिएबल बनाएको ताकि तलको स्क्रिप्टले प्रयोग गर्न सकोस्
+      window.db = db; 
+      window.auth = auth; 
+      window.collection = collection;
+      window.getDocs = getDocs; 
+      window.addDoc = addDoc;
+
+      console.log("🔥 Firebase Successfully Connected!");
+    </script>
+
+    <style>
+        body { font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif; background-color: #f8fafc; }
+        .secure-reader { user-select: none; pointer-events: none; }
+        .reader-content { pointer-events: auto; }
+        @media print { body { display: none !important; } }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" onclick="showSection('home')" class="text-2xl font-bold text-indigo-700">Bhupendra Store</a>
+                </div>
+                <div class="flex items-center space-x-4 overflow-x-auto">
+                    <button onclick="showSection('home')" class="hover:text-indigo-600 font-medium">Home</button>
+                    <button onclick="showSection('store')" class="hover:text-indigo-600 font-medium">eBooks</button>
+                    <button onclick="showSection('cart')" class="text-indigo-600 font-bold bg-indigo-50 px-3 py-1 rounded-full">🛒 <span id="cart-count">0</span></button>
+                    <button onclick="showSection('login')" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium">Login</button>
+                    <button onclick="showSection('admin')" class="hidden md:block text-gray-500 font-medium hover:text-indigo-600">Admin</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="min-h-screen pb-20">
+        
+        <!-- Home Section -->
+        <section id="home" class="max-w-7xl mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 sm:text-6xl leading-tight">ज्ञानलाई सिर्जनामा, सिर्जनालाई <br><span class="text-indigo-600">ब्रान्डमा बदल्नुहोस्</span></h1>
+            <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">AI, Digital Marketing, र Numerology सिक्ने नेपालको उत्कृष्ट डिजिटल प्लेटफर्म।</p>
+            <div class="mt-10">
+                <button onclick="showSection('store')" class="bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg">डिजिटल उत्पादनहरू हेर्नुहोस्</button>
+            </div>
+        </section>
+
+        <!-- Store Section -->
+        <section id="store" class="hidden max-w-7xl mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold mb-8 border-b pb-4">हाम्रा डिजिटल उत्पादनहरू</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400" alt="नेपालीमा AI" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded">eBook</span>
+                        <h3 class="text-xl font-bold mt-3 mb-2">नेपालीमा AI: सम्पूर्ण गाइड</h3>
+                        <div class="flex justify-between items-center pt-4 mt-4 border-t">
+                            <span class="text-2xl font-bold text-gray-900">Rs. 350</span>
+                            <button onclick="addToCart('ai-guide', 'नेपालीमा AI: सम्पूर्ण गाइड', 350)" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Cart & Checkout Section -->
+        <section id="cart" class="hidden max-w-5xl mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold mb-8">तपाईंको कार्ट</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div id="cart-items" class="bg-white p-6 rounded-2xl shadow-sm border">
+                        <p class="text-gray-500 text-center">कार्ट खाली छ।</p>
+                    </div>
+                    
+                    <!-- Coupon Block -->
+                    <div class="mt-6 bg-white p-6 rounded-2xl shadow-sm border">
+                        <h3 class="font-bold mb-2">Have a Coupon? (Try: DASHAIN50)</h3>
+                        <div class="flex gap-2">
+                            <input type="text" id="coupon-code" class="flex-1 border p-3 rounded-lg" placeholder="Enter Code">
+                            <button onclick="applyCoupon()" class="bg-gray-800 text-white px-6 py-3 rounded-lg font-bold">Apply</button>
+                        </div>
+                        <p id="coupon-message" class="text-sm mt-2"></p>
+                    </div>
+                </div>
+
+                <aside class="bg-white p-6 rounded-2xl shadow-md border">
+                    <h3 class="text-xl font-bold mb-4">Payment Details</h3>
+                    <div class="bg-gray-50 p-4 rounded-xl mb-4 text-center">
+                        <p class="text-sm text-gray-500">eSewa Number</p>
+                        <p class="font-bold text-lg text-indigo-700">9842116209</p>
+                    </div>
+                    
+                    <form onsubmit="event.preventDefault(); submitOrder();">
+                        <input type="text" id="cust-name" placeholder="तपाईंको पूरा नाम" class="w-full border p-3 rounded-lg mb-3" required>
+                        <input type="text" id="txn-id" placeholder="eSewa Transaction ID" class="w-full border p-3 rounded-lg mb-3" required>
+                        
+                        <div class="pt-4 border-t mt-2 font-bold text-xl flex justify-between">
+                            <span>Total:</span> <span id="cart-total" class="text-indigo-700">Rs. 0</span>
+                        </div>
+
+                        <button type="submit" id="checkout-btn" class="w-full mt-6 bg-green-600 text-white px-4 py-4 rounded-xl font-bold">अर्डर पक्का गर्नुहोस्</button>
+                    </form>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Login / Admin Dummy Sections -->
+        <section id="login" class="hidden py-20 text-center"><h2 class="text-2xl font-bold">Login System (Coming Soon)</h2></section>
+        <section id="admin" class="hidden py-20 text-center"><h2 class="text-2xl font-bold">Admin Panel (Coming Soon)</h2></section>
+
+    </main>
+
+    <script>
+        let cart = [];
+        let discount = 0;
+
+        window.showSection = (id) => {
+            document.querySelectorAll('main > section').forEach(sec => sec.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        };
+
+        window.addToCart = (id, name, price) => {
+            if(cart.find(i => i.id === id)) return alert("पहिल्यै कार्टमा छ।");
+            cart.push({id, name, price});
+            updateCartUI();
+            alert(`"${name}" थपियो!`);
+        };
+
+        function updateCartUI() {
+            document.getElementById('cart-count').innerText = cart.length;
+            if(cart.length === 0) return;
+            
+            let html = '';
+            let subtotal = 0;
+            cart.forEach(item => {
+                subtotal += item.price;
+                html += `<div class="flex justify-between border-b py-2"><p>${item.name}</p><p>Rs. ${item.price}</p></div>`;
+            });
+            document.getElementById('cart-items').innerHTML = html;
+            document.getElementById('cart-total').innerText = `Rs. ${subtotal - discount}`;
+        }
+
+        window.applyCoupon = () => {
+            const code = document.getElementById('coupon-code').value;
+            if(code === "DASHAIN50" && cart.length > 0) {
+                discount = 50;
+                document.getElementById('coupon-message').innerText = "✅ Rs. 50 Discount Applied!";
+                document.getElementById('coupon-message').style.color = "green";
+                updateCartUI();
+            }
+        };
+
+        // अर्डर डाटाबेसमा पठाउने कोड
+        window.submitOrder = async () => {
+            if(cart.length === 0) return alert("कार्ट खाली छ!");
+            const btn = document.getElementById('checkout-btn');
+            btn.innerText = "Processing..."; btn.disabled = true;
+
+            const orderData = {
+                name: document.getElementById('cust-name').value,
+                txnId: document.getElementById('txn-id').value,
+                items: cart,
+                total: (cart.reduce((sum, item) => sum + item.price, 0)) - discount,
+                date: new Date().toISOString()
+            };
+
+            try {
+                // यो लाइनले Firebase डाटाबेसमा अर्डर सेभ गर्छ
+                await window.addDoc(window.collection(window.db, "orders"), orderData);
+                alert("✅ अर्डर सफलतापूर्वक डाटाबेसमा सेभ भयो!");
+                cart = []; updateCartUI(); showSection('home');
+            } catch (e) {
+                alert("समस्या भयो। कृपया फेरि प्रयास गर्नुहोस्।");
+                console.error(e);
+            } finally {
+                btn.innerText = "अर्डर पक्का गर्नुहोस्"; btn.disabled = false;
+            }
+        };
+    </script>
+</body>
+</html>
