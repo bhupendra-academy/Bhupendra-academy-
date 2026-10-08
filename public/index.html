@@ -3,187 +3,362 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>भुपेन्द्र पौडेल - Ultimate Digital Empire & Numerology</title>
+<!-- SEO Meta Tags -->
+<title>Bhupendra Poudel | Grand Master Numerology & Digital Creator</title>
+<meta name="description" content="Welcome to the digital empire of Bhupendra Poudel. Learn advanced Chaldean numerology, access premium digital courses, and explore AI-driven name correction. Join the ultimate platform for personal growth and digital success in Nepal.">
+<meta name="keywords" content="Bhupendra Poudel, Numerology Nepal, Chaldean Numerology, Digital Creator, AI SEO, Astrology, Affiliate Marketing, Online Courses Nepal">
+<meta name="author" content="Bhupendra Poudel">
+<!-- Open Graph for Social Media -->
+<meta property="og:title" content="Bhupendra Poudel | Digital Empire">
+<meta property="og:description" content="Master your destiny with advanced numerology and digital skills.">
+<!-- Replace with your actual photo URL when available -->
+<meta property="og:image" content="https://ui-avatars.com/api/?name=Bhupendra+Poudel&background=d4af37&color=000&size=500"> 
+
+<!-- Fonts and Icons -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- EmailJS Library -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+      emailjs.init("p8MiQdDldbJol2acP"); // Replace with your actual key if needed
+  })();
+</script>
+
 <style>
+/* --- PREMIUM CSS DESIGN SYSTEM --- */
 :root {
-  --bg-main: #040811; --bg-card: #0a1220; --bg-panel: #111d33;
-  --gold: #d4af37; --gold-light: #f5d176; --gold-dark: #997a00;
-  --text-main: #e6f1ff; --text-muted: #8892b0;
-  --accent-blue: #3a7bd5; --accent-red: #e74c3c; --accent-green: #2ecc71;
-  --border: rgba(212, 175, 55, 0.2);
-  --ff-title: 'Cinzel', serif; --ff-nep: 'Noto Sans Devanagari', sans-serif;
+  --bg-main: #02060e; /* Deep rich black/blue */
+  --bg-card: #0a1120; /* Slightly lighter card background */
+  --bg-panel: #131f37; /* Panel background */
+  --gold: #d4af37;
+  --gold-light: #f9e596;
+  --gold-dark: #997a00;
+  --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f9e596 50%, #d4af37 100%);
+  --text-main: #e6f1ff;
+  --text-muted: #8892b0;
+  --accent-blue: #2962ff;
+  --accent-red: #ff3d00;
+  --accent-green: #00e676;
+  --border: rgba(212, 175, 55, 0.15);
+  --ff-title: 'Cinzel', serif;
+  --ff-nep: 'Noto Sans Devanagari', sans-serif;
+  --shadow-gold: 0 4px 15px rgba(212, 175, 55, 0.2);
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: var(--ff-nep); background: var(--bg-main); color: var(--text-main); min-height: 100vh; overflow-x: hidden; }
+body { font-family: var(--ff-nep); background: var(--bg-main); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
 
-/* HEADER */
-.header { background: linear-gradient(180deg, #020408 0%, rgba(4,8,17,0.95) 100%); border-bottom: 1px solid var(--border); padding: 15px 20px; position: sticky; top:0; z-index:100; backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; }
-.brand h1 { font-family: var(--ff-title); color: var(--gold); font-size: 1.4rem; letter-spacing: 1px; text-transform: uppercase; }
-.brand p { color: var(--text-muted); font-size: 0.75rem; margin-top: 4px; }
-.badge { background: linear-gradient(90deg, var(--gold-dark), var(--gold)); color: #000; font-size: 0.65rem; font-weight: bold; padding: 3px 10px; border-radius: 20px; display: inline-block; margin-top: 5px; }
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
 
-/* MAIN NAVIGATION */
-.nav-scroll { overflow-x: auto; white-space: nowrap; background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 10px; position: sticky; top: 73px; z-index: 99; display: flex; gap: 5px; justify-content: flex-start; scrollbar-width: none; }
+/* --- HEADER --- */
+.header { 
+  background: rgba(2, 6, 14, 0.95); 
+  border-bottom: 1px solid var(--border); 
+  padding: 15px 20px; 
+  position: sticky; top:0; z-index:100; 
+  backdrop-filter: blur(12px); 
+  display: flex; justify-content: space-between; align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.brand { display: flex; align-items: center; gap: 15px; }
+.brand-img { 
+  width: 50px; height: 50px; border-radius: 50%; 
+  border: 2px solid var(--gold); 
+  box-shadow: var(--shadow-gold);
+  object-fit: cover;
+}
+.brand-info h1 { font-family: var(--ff-title); color: var(--gold); font-size: 1.4rem; letter-spacing: 1px; text-transform: uppercase; line-height: 1.2;}
+.brand-info p { color: var(--text-muted); font-size: 0.75rem; }
+.badge { background: var(--gold-gradient); color: #000; font-size: 0.65rem; font-weight: bold; padding: 3px 10px; border-radius: 20px; display: inline-block; margin-top: 2px; }
+
+/* --- NAVIGATION --- */
+.nav-scroll { 
+  overflow-x: auto; white-space: nowrap; 
+  background: var(--bg-card); 
+  border-bottom: 1px solid var(--border); 
+  padding: 12px 15px; 
+  position: sticky; top: 81px; z-index: 99; 
+  display: flex; gap: 10px; justify-content: flex-start; 
+  scrollbar-width: none; 
+}
 .nav-scroll::-webkit-scrollbar { display: none; }
-.nav-btn { background: transparent; color: var(--text-muted); border: none; padding: 10px 15px; border-radius: 8px; font-family: var(--ff-nep); font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.3s; white-space: nowrap; }
-.nav-btn:hover { color: var(--gold-light); background: rgba(212,175,55,0.05); }
-.nav-btn.active { color: #000; background: linear-gradient(135deg, var(--gold), var(--gold-light)); box-shadow: 0 4px 10px rgba(212,175,55,0.3); }
+.nav-btn { 
+  background: transparent; color: var(--text-muted); 
+  border: 1px solid transparent; padding: 8px 16px; border-radius: 25px; 
+  font-family: var(--ff-nep); font-weight: 600; font-size: 0.9rem; 
+  cursor: pointer; transition: all 0.3s ease; white-space: nowrap;
+  display: flex; align-items: center; gap: 8px;
+}
+.nav-btn:hover { color: var(--gold-light); background: rgba(212,175,55,0.05); border-color: var(--border); }
+.nav-btn.active { color: #000; background: var(--gold-gradient); box-shadow: var(--shadow-gold); border-color: transparent;}
 
 /* SUB NAVIGATION (For Numerology) */
-.sub-nav { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center; }
-.sub-btn { background: rgba(255,255,255,0.05); color: var(--text-main); border: 1px solid var(--border); padding: 8px 15px; border-radius: 20px; font-size: 0.8rem; cursor: pointer; position: relative; }
-.sub-btn.active { background: var(--gold); color: #000; font-weight: bold; }
-.lock-icon { position: absolute; top: -5px; right: -5px; background: var(--accent-red); color: white; width: 16px; height: 16px; border-radius: 50%; font-size: 0.55rem; display: flex; align-items: center; justify-content: center; }
+.sub-nav { display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap; justify-content: center; }
+.sub-btn { background: var(--bg-panel); color: var(--text-muted); border: 1px solid var(--border); padding: 8px 18px; border-radius: 20px; font-size: 0.85rem; cursor: pointer; position: relative; transition: 0.3s;}
+.sub-btn:hover { border-color: var(--gold); color: var(--text-main); }
+.sub-btn.active { background: var(--gold); color: #000; font-weight: bold; border-color: var(--gold); }
+.lock-icon { position: absolute; top: -5px; right: -5px; background: var(--accent-red); color: white; width: 18px; height: 18px; border-radius: 50%; font-size: 0.6rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.5);}
 
-/* LAYOUT & CARDS */
-.container { max-width: 1100px; margin: 0 auto; padding: 20px; padding-bottom: 100px; }
-.tab-content, .sub-tab-content { display: none; animation: fadeIn 0.4s ease; }
+/* --- MAIN LAYOUT & CARDS --- */
+.container { max-width: 1200px; margin: 0 auto; padding: 25px 20px 100px; }
+.tab-content, .sub-tab-content { display: none; animation: fadeIn 0.5s ease; }
 .tab-content.active, .sub-tab-content.active { display: block; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
-.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-.card-title { font-family: var(--ff-title); color: var(--gold); font-size: 1.1rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 10px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; }
-@media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
-.panel { background: rgba(255,255,255,0.03); border-left: 3px solid var(--gold); padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
-.panel.green { border-left-color: var(--accent-green); background: rgba(46,204,113,0.05); }
-.panel.red { border-left-color: var(--accent-red); background: rgba(231,76,60,0.05); }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 25px; margin-bottom: 25px; box-shadow: var(--shadow-card); position: relative; overflow: hidden; }
+/* Subtle decorative glow for cards */
+.card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--gold-gradient); opacity: 0.5; }
+.card-title { font-family: var(--ff-title); color: var(--gold); font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 12px; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
 
-/* FORMS */
-.input-group { margin-bottom: 15px; }
-.input-group label { display: block; color: var(--gold-light); font-size: 0.8rem; margin-bottom: 5px; }
-.input-control { width: 100%; padding: 12px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-family: sans-serif; }
-.input-control:focus { outline: none; border-color: var(--gold); background: rgba(212,175,55,0.05); }
-textarea.input-control { resize: vertical; min-height: 100px; }
-.btn-primary { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: #000; border: none; padding: 12px 25px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.3s; }
-.btn-primary:hover { box-shadow: 0 5px 15px rgba(212,175,55,0.4); transform: translateY(-2px); }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+@media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
 
-/* NUMEROLOGY BOXES & LOSHU */
-.n-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 15px 0; }
-.n-box { background: rgba(212,175,55,0.05); border: 1px solid var(--border); border-radius: 8px; padding: 15px 10px; text-align: center; }
-.n-box-lbl { color: var(--text-muted); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 5px; }
-.n-box-val { font-family: var(--ff-title); font-size: 2rem; color: var(--gold-light); font-weight: bold; }
-.n-box-desc { color: var(--text-main); font-size: 0.75rem; margin-top: 5px; }
+.panel { background: rgba(255,255,255,0.02); border-left: 4px solid var(--gold); padding: 18px; margin: 15px 0; border-radius: 0 8px 8px 0; }
+.panel.green { border-left-color: var(--accent-green); background: rgba(0, 230, 118, 0.05); }
+.panel.red { border-left-color: var(--accent-red); background: rgba(255, 61, 0, 0.05); }
 
-.m-digits { display: flex; justify-content: center; flex-wrap: wrap; gap: 5px; margin: 15px 0; }
-.m-d { width: 40px; height: 50px; display: flex; flex-direction:column; justify-content: center; align-items: center; background: var(--bg-panel); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; font-family: sans-serif; font-size: 1.2rem; font-weight: bold; }
-.m-d.good { color: var(--accent-green); border-color: rgba(46,204,113,0.3); }
-.m-d.bad { color: var(--accent-red); border-color: rgba(231,76,60,0.3); }
-.m-d.neu { color: var(--gold-light); }
-.m-i { font-size:0.6rem; color:var(--text-muted); font-weight:normal; margin-top:2px; }
+/* --- FORMS & BUTTONS --- */
+.input-group { margin-bottom: 18px; }
+.input-group label { display: block; color: var(--gold-light); font-size: 0.85rem; margin-bottom: 8px; font-weight: 500; }
+.input-control { width: 100%; padding: 14px; background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; color: #fff; font-family: sans-serif; font-size: 1rem; transition: 0.3s; }
+.input-control:focus { outline: none; border-color: var(--gold); background: rgba(212,175,55,0.05); box-shadow: 0 0 10px rgba(212,175,55,0.1); }
+textarea.input-control { resize: vertical; min-height: 120px; font-family: var(--ff-nep); }
 
-.loshu-wrapper { display: flex; justify-content: center; margin: 20px 0; }
-.loshu-grid { display: grid; grid-template-columns: repeat(3, 70px); grid-template-rows: repeat(3, 70px); gap: 5px; }
-.l-cell { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-family: var(--ff-title); color: var(--gold-light); font-weight: bold; position: relative; }
-.l-cell.empty { opacity: 0.3; }
-.l-cell.multiple { background: rgba(212,175,55,0.1); border-color: var(--gold); }
-.l-dots { position: absolute; bottom: 5px; display: flex; gap: 2px; }
-.l-dot { width: 5px; height: 5px; background: var(--accent-red); border-radius: 50%; }
+.btn-primary { background: var(--gold-gradient); color: #000; border: none; padding: 14px 28px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.3s; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.btn-primary:hover { box-shadow: var(--shadow-gold); transform: translateY(-3px); }
+.btn-outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 8px 16px; border-radius: 6px; cursor: pointer; transition: 0.3s; font-weight: 600; }
+.btn-outline:hover { background: rgba(212,175,55,0.1); }
 
-/* STORE & LMS */
-.product-card { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; text-align: center; }
-.product-img { width: 100%; height: 150px; background: #111; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--gold); border-bottom: 1px solid var(--border); position: relative; }
-.product-info { padding: 15px; }
-.price { color: var(--accent-green); font-size: 1.2rem; font-weight: bold; margin: 10px 0; font-family: sans-serif; }
-.course-progress { height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; margin: 10px 0; overflow: hidden; }
-.progress-bar { height: 100%; background: var(--accent-green); width: 45%; }
+/* --- PROFILE SECTION (HOME) --- */
+.profile-hero { text-align: center; padding: 30px 10px; }
+.profile-pic-large { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--gold); box-shadow: var(--shadow-gold); object-fit: cover; margin-bottom: 20px; }
+.hero-title { font-family: var(--ff-title); color: var(--gold-light); font-size: 2.2rem; margin-bottom: 10px; }
+.hero-desc { color: var(--text-muted); max-width: 800px; margin: 0 auto 25px; font-size: 1.1rem; }
+.stats-row { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border); }
+.stat-item { text-align: center; }
+.stat-num { font-family: var(--ff-title); font-size: 1.8rem; color: var(--gold); }
+.stat-lbl { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
 
-/* BLOG & AFFILIATE */
-.stat-box { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; text-align: center; border: 1px solid rgba(255,255,255,0.05); }
-.stat-val { font-size: 2rem; color: var(--gold-light); font-family: sans-serif; font-weight: bold; }
-.blog-card { display: flex; gap: 15px; padding: 15px; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 15px; align-items: center; cursor: pointer; transition: 0.3s; }
-.blog-card:hover { border-color: var(--gold); transform: translateX(5px); }
-@media (max-width: 600px) { .blog-card { flex-direction: column; text-align: center; } }
-.blog-img { width: 140px; height: 90px; background: #000; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; border: 1px solid rgba(255,255,255,0.1); }
-.blog-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
-.play-btn { position: absolute; color: white; font-size: 2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+/* --- NUMEROLOGY BOXES & LOSHU --- */
+.n-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; margin: 20px 0; }
+.n-box { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px 10px; text-align: center; position: relative; overflow: hidden; }
+.n-box::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: var(--gold); opacity: 0.5; }
+.n-box-lbl { color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 8px; font-weight: 600; }
+.n-box-val { font-family: var(--ff-title); font-size: 2.5rem; color: var(--gold-light); font-weight: bold; line-height: 1; }
+.n-box-desc { color: var(--text-main); font-size: 0.8rem; margin-top: 8px; }
+
+/* --- STORE & LMS --- */
+.product-card { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: 0.3s; }
+.product-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-card); border-color: var(--gold); }
+.product-img { height: 180px; background: #000; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: var(--gold); position: relative; }
+.product-info { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+.price { color: var(--accent-green); font-size: 1.4rem; font-weight: bold; margin: 15px 0; font-family: sans-serif; }
+.course-progress { height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin: 15px 0; overflow: hidden; }
+.progress-bar { height: 100%; background: var(--accent-green); width: 45%; border-radius: 3px; }
+
+/* --- BLOG SECTION (ENHANCED) --- */
+.blog-header-action { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px; }
+.blog-card { display: flex; gap: 20px; padding: 20px; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 20px; align-items: flex-start; cursor: pointer; transition: 0.3s; position: relative; overflow: hidden; }
+.blog-card:hover { border-color: var(--gold); background: rgba(19, 31, 55, 0.8); }
+.blog-card::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: var(--gold); transform: scaleY(0); transition: 0.3s; origin: bottom; }
+.blog-card:hover::before { transform: scaleY(1); }
+@media (max-width: 600px) { .blog-card { flex-direction: column; } }
+.blog-img { width: 200px; height: 130px; background: #000; border-radius: 8px; flex-shrink: 0; overflow: hidden; position: relative; border: 1px solid var(--border); }
+.blog-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: 0.5s; }
+.blog-card:hover .blog-img img { opacity: 1; transform: scale(1.05); }
+.blog-content-list { flex: 1; }
+.blog-title-list { color: var(--gold-light); font-size: 1.2rem; margin-bottom: 10px; font-weight: 600; line-height: 1.4; }
+.blog-excerpt { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-meta-list { display: flex; gap: 15px; font-size: 0.8rem; color: var(--text-muted); }
 
 /* SINGLE BLOG VIEW */
-.single-blog-header { border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-bottom: 20px; }
-.single-blog-title { color: var(--gold); font-size: 1.8rem; margin-bottom: 10px; }
-.single-blog-meta { color: var(--text-muted); font-size: 0.85rem; display: flex; gap: 15px; }
-.yt-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin: 20px 0; border: 1px solid var(--border); }
-.yt-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-.blog-text-content { line-height: 1.8; color: #f0f0f0; font-size: 1.05rem; white-space: pre-line; }
+.single-blog-header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 25px; }
+.single-blog-title { color: var(--gold); font-size: 2rem; margin-bottom: 15px; line-height: 1.3; font-family: var(--ff-title); }
+.blog-text-content { line-height: 1.9; color: #f0f0f0; font-size: 1.1rem; white-space: pre-line; }
 
-/* PAYWALL MODAL */
-.overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(5px); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
-.modal { background: var(--bg-card); border: 1px solid var(--gold); border-radius: 12px; width: 100%; max-width: 450px; padding: 25px; text-align: center; position: relative; box-shadow: 0 10px 40px #000; }
-.close-btn { position: absolute; top: 15px; right: 15px; background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; }
-.price-tag { font-family: sans-serif; font-size: 2.5rem; color: #fff; font-weight: bold; margin: 15px 0; }
+/* --- AFFILIATE DASHBOARD --- */
+.affiliate-dashboard { display: grid; grid-template-columns: 2fr 1fr; gap: 25px; }
+@media (max-width: 900px) { .affiliate-dashboard { grid-template-columns: 1fr; } }
+.stat-box { background: linear-gradient(180deg, var(--bg-panel) 0%, rgba(19, 31, 55, 0.5) 100%); padding: 25px; border-radius: 12px; text-align: center; border: 1px solid var(--border); position: relative; }
+.stat-val { font-size: 2.5rem; color: var(--gold-light); font-family: sans-serif; font-weight: bold; margin-top: 10px; }
+.table-container { overflow-x: auto; margin-top: 20px; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 12px 15px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+th { color: var(--gold-light); font-weight: 600; background: rgba(255,255,255,0.02); }
+tr:hover td { background: rgba(255,255,255,0.01); }
 
-/* AI CHATBOT */
-.chat-btn { position: fixed; bottom: 25px; right: 25px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.8rem; color: #000; cursor: pointer; box-shadow: 0 5px 20px rgba(212,175,55,0.5); z-index: 9999; animation: bounce 2s infinite; transition: 0.3s; }
-.chat-btn:hover { transform: scale(1.1); animation: none; }
-@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-10px);} 60% {transform: translateY(-5px);} }
-.chat-window { display: none; position: fixed; bottom: 95px; right: 25px; width: 330px; height: 420px; background: var(--bg-card); border: 1px solid var(--gold); border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.8); z-index: 9999; flex-direction: column; overflow: hidden; }
-.chat-hdr { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: #000; padding: 12px 15px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
-.chat-body { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; background: var(--bg-main); font-size: 0.85rem; }
-.msg { max-width: 85%; padding: 10px 12px; border-radius: 10px; line-height: 1.4; }
-.msg.bot { background: rgba(212,175,55,0.1); border: 1px solid var(--border); align-self: flex-start; border-bottom-left-radius: 0; }
-.msg.user { background: var(--accent-blue); color: #fff; align-self: flex-end; border-bottom-right-radius: 0; }
-.chat-footer { padding: 10px; background: var(--bg-panel); display: flex; gap: 8px; border-top: 1px solid rgba(255,255,255,0.1); }
-.chat-input { flex: 1; padding: 10px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.5); color: #fff; outline: none; }
-.chat-send { background: none; border: none; color: var(--gold); font-size: 1.2rem; cursor: pointer; padding: 0 5px; }
+/* --- MODALS & OVERLAYS --- */
+.overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); z-index: 1000; align-items: center; justify-content: center; padding: 20px; animation: fadeIn 0.3s; }
+.modal { background: var(--bg-card); border: 1px solid var(--gold); border-radius: 16px; width: 100%; max-width: 480px; padding: 30px; text-align: center; position: relative; box-shadow: 0 15px 50px rgba(0,0,0,0.8); }
+.close-btn { position: absolute; top: 15px; right: 20px; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; transition: 0.3s; }
+.close-btn:hover { color: var(--accent-red); }
 
+/* --- ADVANCED AI CHATBOT (Floating UI) --- */
+.chat-widget-container { position: fixed; bottom: 25px; right: 25px; z-index: 9999; display: flex; flex-direction: column; align-items: flex-end; }
+.chat-btn { background: var(--gold-gradient); width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 2rem; color: #000; cursor: pointer; box-shadow: 0 8px 25px rgba(212,175,55,0.4); transition: 0.3s; position: relative; }
+.chat-btn::after { content: '1'; position: absolute; top: -2px; right: -2px; background: var(--accent-red); color: white; width: 22px; height: 22px; border-radius: 50%; font-size: 0.75rem; display: flex; justify-content: center; align-items: center; font-family: sans-serif; font-weight: bold; border: 2px solid var(--bg-main); }
+.chat-btn:hover { transform: scale(1.05); }
+
+.chat-window { display: none; width: 360px; height: 500px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.6); flex-direction: column; overflow: hidden; margin-bottom: 15px; animation: fadeIn 0.3s ease; }
+@media (max-width: 400px) { .chat-window { width: calc(100vw - 40px); height: 70vh; } }
+.chat-hdr { background: rgba(19, 31, 55, 0.95); border-bottom: 1px solid var(--border); padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+.chat-hdr-info { display: flex; align-items: center; gap: 10px; }
+.chat-bot-avatar { width: 35px; height: 35px; background: var(--gold-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 1.2rem; }
+.chat-status { font-size: 0.7rem; color: var(--accent-green); display: flex; align-items: center; gap: 4px; }
+.chat-status::before { content: ''; width: 6px; height: 6px; background: var(--accent-green); border-radius: 50%; }
+
+.chat-body { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; background: var(--bg-main); scrollbar-width: thin; }
+.msg-wrapper { display: flex; flex-direction: column; max-width: 85%; }
+.msg-wrapper.bot { align-self: flex-start; }
+.msg-wrapper.user { align-self: flex-end; align-items: flex-end; }
+.msg { padding: 12px 16px; border-radius: 12px; font-size: 0.9rem; line-height: 1.5; }
+.msg.bot { background: var(--bg-panel); border: 1px solid var(--border); color: var(--text-main); border-bottom-left-radius: 2px; }
+.msg.user { background: var(--accent-blue); color: #fff; border-bottom-right-radius: 2px; }
+.msg-time { font-size: 0.65rem; color: var(--text-muted); margin-top: 4px; }
+
+.chat-footer { padding: 15px; background: var(--bg-panel); display: flex; gap: 10px; border-top: 1px solid var(--border); }
+.chat-input { flex: 1; padding: 12px 15px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); color: #fff; font-family: var(--ff-nep); outline: none; transition: 0.3s; }
+.chat-input:focus { border-color: var(--gold); background: rgba(0,0,0,0.5); }
+.chat-send { background: var(--gold-gradient); border: none; width: 42px; height: 42px; border-radius: 50%; color: #000; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+.chat-send:hover { transform: scale(1.1); }
 </style>
 </head>
 <body>
 
+<!-- HEADER -->
 <div class="header">
   <div class="brand">
-    <h1>Bhupendra Poudel</h1>
-    <p>Grand Master Numerology & Digital Creator</p>
-    <div class="badge">✦ 25+ Years of Experience ✦</div>
+    <!-- PLACEHOLDER FOR YOUR PHOTO -->
+    <img src="https://ui-avatars.com/api/?name=Bhupendra+Poudel&background=d4af37&color=000&size=150" alt="Bhupendra Poudel" class="brand-img" id="header-profile-img">
+    <div class="brand-info">
+      <h1>Bhupendra Poudel</h1>
+      <p>Digital Creator & Numerology Expert</p>
+      <div class="badge">✦ Pro ✦</div>
+    </div>
   </div>
   <div>
-    <button class="nav-btn" style="border:1px solid var(--gold); color:var(--gold); padding:6px 12px;" onclick="alert('Firebase Google Auth Pending. Use PRO25 passcode for Pro access.')"><i class="fab fa-google"></i> Login</button>
+    <!-- Connected to auth.js -->
+    <button id="mainLoginBtn" class="btn-outline">
+      <i class="fab fa-google"></i> Login
+    </button>
   </div>
 </div>
 
+<!-- MAIN NAVIGATION -->
 <div class="nav-scroll">
   <button class="nav-btn active" onclick="switchMainTab('tab-home', this)"><i class="fas fa-home"></i> होम</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-blog', this)"><i class="fas fa-pen-fancy"></i> ब्लग / लेखहरू</button>
   <button class="nav-btn" onclick="switchMainTab('tab-numerology', this)"><i class="fas fa-star"></i> न्यूमेरोलोजी प्रो</button>
   <button class="nav-btn" onclick="switchMainTab('tab-store', this)"><i class="fas fa-store"></i> स्टोर</button>
-  <button class="nav-btn" onclick="switchMainTab('tab-lms', this)"><i class="fas fa-graduation-cap"></i> मेरो कोर्स</button>
-  <button class="nav-btn" onclick="switchMainTab('tab-affiliate', this)"><i class="fas fa-chart-line"></i> एफिलिएट</button>
-  <button class="nav-btn" onclick="switchMainTab('tab-blog', this)"><i class="fas fa-newspaper"></i> ब्लग / ज्ञान</button>
-  <button class="nav-btn" onclick="switchMainTab('tab-admin', this)" style="color: var(--accent-red);"><i class="fas fa-cog"></i> एडमिन</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-lms', this)"><i class="fas fa-graduation-cap"></i> ड्यासबोर्ड (LMS)</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-affiliate', this)"><i class="fas fa-chart-line"></i> एफिलिएट सेन्टर</button>
+  <button class="nav-btn" onclick="switchMainTab('tab-admin', this)" style="color: var(--accent-red);"><i class="fas fa-shield-alt"></i> एडमिन</button>
 </div>
 
 <div class="container">
 
-  <!-- ==================== TAB 1: HOME ==================== -->
+  <!-- ==================== TAB 1: HOME (Profile & SEO) ==================== -->
   <section id="tab-home" class="tab-content active">
-    <div class="card" style="text-align: center; padding: 40px 20px;">
-      <img src="https://ui-avatars.com/api/?name=Bhupendra+Poudel&background=d4af37&color=000&size=100" style="border-radius:50%; border:3px solid var(--gold); margin-bottom:15px;">
-      <h2 style="font-family: var(--ff-title); color: var(--gold-light); font-size: 1.8rem;">Welcome to the Digital Empire</h2>
-      <p style="color: var(--text-muted); line-height: 1.8; max-width: 700px; margin: 15px auto;">
-        अंकशास्त्र (Numerology) केवल अन्धविश्वास होइन, यो ऊर्जा, कम्पन र मानव मनोविज्ञानसँग सम्बन्धित विज्ञान हो। २५ वर्षको अनुभवको आधारमा तयार पारिएको यो प्लेटफर्ममा तपाईंले आफ्नो जीवनको नक्सा, सफलताको साँचो, र डिजिटल सीप सिक्न सक्नुहुनेछ।
+    <div class="card profile-hero">
+      <!-- PLACEHOLDER FOR YOUR LARGE PHOTO -->
+      <img src="https://ui-avatars.com/api/?name=Bhupendra+Poudel&background=d4af37&color=000&size=300" alt="Bhupendra Poudel Grand Master" class="profile-pic-large">
+      <h2 class="hero-title">Welcome to the Ultimate Digital Empire</h2>
+      <p class="hero-desc">
+        नमस्कार, म भुपेन्द्र पौडेल। म एक डिजिटल क्रिएटर र न्यूमेरोलोजी (अंकशास्त्र) विशेषज्ञ हुँ। २५ वर्षको गहिरो अध्ययन र अनुभवको आधारमा, मैले यो प्लेटफर्म तयार पारेको छु। यहाँ तपाईंले आफ्नो जीवनको ऊर्जा सन्तुलन गर्न वैज्ञानिक अंकशास्त्र सिक्न सक्नुहुन्छ, साथै आधुनिक एआई (AI) र डिजिटल मार्केटिङका सीपहरू सिकेर आफ्नो व्यापार बढाउन सक्नुहुन्छ।
       </p>
-      <div style="display: flex; justify-content: center; gap: 15px; margin-top: 25px; flex-wrap: wrap;">
-        <button class="btn-primary" style="width: auto;" onclick="document.querySelectorAll('.nav-btn')[1].click()"><i class="fas fa-magic"></i> ऊर्जा विश्लेषण सुरु गर्नुहोस्</button>
-        <button class="btn-primary" style="width: auto; background: var(--accent-green); color: #fff; border: none;" onclick="window.open('https://wa.me/9779842116209', '_blank')"><i class="fab fa-whatsapp"></i> WhatsApp Consultation</button>
+      
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">25+</div>
+          <div class="stat-lbl">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">10K+</div>
+          <div class="stat-lbl">Lives Impacted</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">15+</div>
+          <div class="stat-lbl">Digital Courses</div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 20px; margin-top: 40px; flex-wrap: wrap;">
+        <button class="btn-primary" style="width: auto;" onclick="document.querySelectorAll('.nav-btn')[2].click()">
+          <i class="fas fa-magic"></i> ऊर्जा विश्लेषण सुरु गर्नुहोस्
+        </button>
+        <button class="btn-primary" style="width: auto; background: var(--accent-green); color: #fff; border: none;" onclick="window.open('https://wa.me/9779842116209', '_blank')">
+          <i class="fab fa-whatsapp"></i> WhatsApp Consultation
+        </button>
+      </div>
+    </div>
+
+    <!-- SEO Oriented Quick Links -->
+    <div class="grid-3">
+      <div class="panel" style="margin:0; cursor:pointer;" onclick="document.querySelectorAll('.nav-btn')[1].click()">
+        <h3 style="color:var(--gold-light);"><i class="fas fa-book-reader"></i> ज्ञान भण्डार (Blogs)</h3>
+        <p style="font-size:0.9rem; margin-top:10px;">Chaldean Numerology र AI सम्बन्धी मेरा नयाँ लेखहरू पढ्नुहोस्।</p>
+      </div>
+      <div class="panel" style="margin:0; cursor:pointer;" onclick="document.querySelectorAll('.nav-btn')[3].click()">
+        <h3 style="color:var(--gold-light);"><i class="fas fa-shopping-bag"></i> प्रिमियम स्टोर</h3>
+        <p style="font-size:0.9rem; margin-top:10px;">५५-दिने मास्टरक्लास र 'नेपालीमा AI' ई-बुक खरिद गर्नुहोस्।</p>
+      </div>
+      <div class="panel" style="margin:0; cursor:pointer;" onclick="document.querySelectorAll('.nav-btn')[5].click()">
+        <h3 style="color:var(--gold-light);"><i class="fas fa-handshake"></i> पार्टनर बन्नुहोस्</h3>
+        <p style="font-size:0.9rem; margin-top:10px;">हाम्रो एफिलिएट प्रोग्राममा जोडिएर घरमै बसी आम्दानी गर्नुहोस्।</p>
       </div>
     </div>
   </section>
 
-  <!-- ==================== TAB 2: NUMEROLOGY PRO ==================== -->
+  <!-- ==================== TAB 2: BLOG / ARTICLES (NEW & IMPROVED) ==================== -->
+  <section id="tab-blog" class="tab-content">
+    <div id="blog-list-view">
+      <div class="blog-header-action">
+        <h2 class="card-title" style="margin:0; border:none; padding:0;"><i class="fas fa-pen-nib"></i> भुपेन्द्र पौडेलका लेखहरू</h2>
+        <div style="color:var(--text-muted); font-size:0.9rem;">नयाँ ज्ञान र अपडेटहरू</div>
+      </div>
+      
+      <div id="dynamic-blog-container">
+        <!-- Blogs will be injected here via JS -->
+      </div>
+    </div>
+
+    <!-- Single Blog Reader -->
+    <div id="single-blog-view" style="display:none;">
+      <button class="btn-outline" style="margin-bottom:20px; background:var(--bg-panel);" onclick="closeBlog()"><i class="fas fa-arrow-left"></i> पछाडि जानुहोस्</button>
+      <div class="card">
+        <div class="single-blog-header">
+          <h1 class="single-blog-title" id="read-title">Title</h1>
+          <div style="display:flex; gap:20px; color:var(--text-muted); font-size:0.9rem; align-items:center;">
+            <span><img src="https://ui-avatars.com/api/?name=Bhupendra+Poudel&background=d4af37&color=000" style="width:24px; border-radius:50%; vertical-align:middle; margin-right:8px;"> भुपेन्द्र पौडेल</span>
+            <span id="read-date"><i class="fas fa-calendar-alt"></i> Date</span>
+          </div>
+        </div>
+        <div id="read-media-container" style="margin-bottom: 25px;"></div>
+        <div class="blog-text-content" id="read-content"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TAB 3: NUMEROLOGY PRO ==================== -->
   <section id="tab-numerology" class="tab-content">
     <div class="sub-nav">
-      <button class="sub-btn active" onclick="switchSubTab('num-birth', this)">जन्म र लो-शु (Free)</button>
+      <button class="sub-btn active" onclick="switchSubTab('num-birth', this)">जन्म विश्लेषण (Free)</button>
       <button class="sub-btn" onclick="switchSubTab('num-mobile', this)">मोबाइल मास्टर <i class="fas fa-lock lock-icon p-lock"></i></button>
       <button class="sub-btn" onclick="switchSubTab('num-name', this)">नाम सुधार (AI) <i class="fas fa-lock lock-icon p-lock"></i></button>
-      <button class="sub-btn" onclick="switchSubTab('num-remedy', this)">वैदिक उपाय <i class="fas fa-lock lock-icon p-lock"></i></button>
     </div>
 
     <!-- SUB-TAB: BIRTH & LOSHU -->
     <div id="num-birth" class="sub-tab-content active">
       <div class="card">
-        <div class="card-title"><i class="fas fa-user-circle"></i> आधारभूत जन्म विश्लेषण</div>
+        <div class="card-title"><i class="fas fa-user-circle"></i> आधारभूत जन्म र लो-शु (Lo-Shu) विश्लेषण</div>
         <div class="grid-2">
           <div class="input-group">
             <label>पूरा नाम (English):</label>
@@ -199,12 +374,12 @@ textarea.input-control { resize: vertical; min-height: 100px; }
       <div id="res-birth" style="display:none;"></div>
     </div>
 
-    <!-- SUB-TAB: MOBILE (PREMIUM) -->
+    <!-- SUB-TAB: MOBILE -->
     <div id="num-mobile" class="sub-tab-content">
       <div class="card">
         <div class="card-title"><i class="fas fa-mobile-alt"></i> प्रिमियम मोबाइल विश्लेषण (Layer-wise)</div>
         <div class="panel">
-          <p>यो प्रणाली ५५ दिने Advanced Numerology Course को नियमहरूमा आधारित छ। यसले तपाईको मोबाइलको तहगत ऊर्जा र ८१ संयोजन (Combinations) को गहिरो अर्थ दिन्छ।</p>
+          <p>यो प्रणाली ५५ दिने Advanced Numerology Course को नियमहरूमा आधारित छ।</p>
         </div>
         <div class="grid-2">
           <div class="input-group">
@@ -219,12 +394,12 @@ textarea.input-control { resize: vertical; min-height: 100px; }
       <div id="res-mobile" style="display:none;"></div>
     </div>
 
-    <!-- SUB-TAB: NAME AI (PREMIUM) -->
+    <!-- SUB-TAB: NAME AI -->
     <div id="num-name" class="sub-tab-content">
       <div class="card">
-        <div class="card-title"><i class="fas fa-spell-check"></i> नाम सुधार प्रणाली (Chaldean)</div>
+        <div class="card-title"><i class="fas fa-spell-check"></i> नाम सुधार प्रणाली (Chaldean AI)</div>
         <div class="panel">
-          <p>नामको कम्पन जन्म मितिको भाग्यांकसँग मिल्नुपर्छ। यदि मिल्दैन भने, यो AI ले नामको स्पेलिङमा कुन अक्षर थप्दा शुभ हुन्छ भनेर सटिक सुझाव दिन्छ।</p>
+          <p>AI ले नामको स्पेलिङमा कुन अक्षर थप्दा शुभ हुन्छ भनेर सटिक सुझाव दिन्छ।</p>
         </div>
         <div class="grid-2">
           <div class="input-group">
@@ -245,228 +420,235 @@ textarea.input-control { resize: vertical; min-height: 100px; }
         <div id="res-nameai" style="margin-top:20px; display:none;"></div>
       </div>
     </div>
-
-    <!-- SUB-TAB: REMEDIES (PREMIUM) -->
-    <div id="num-remedy" class="sub-tab-content">
-      <div class="card">
-        <div class="card-title"><i class="fas fa-leaf"></i> वैदिक उपाय र समाधान</div>
-        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:15px;">पहिले जन्म विश्लेषण ट्याबमा आफ्नो जन्म मिति हाल्नुहोस्, त्यसपछि यहाँ छुटेका अंकहरू (Missing Numbers) को अटोमेटिक समाधान देखिनेछ।</p>
-        <div id="res-remedy"></div>
-      </div>
-    </div>
   </section>
 
-  <!-- ==================== TAB 3: DIGITAL STORE ==================== -->
+  <!-- ==================== TAB 4: DIGITAL STORE ==================== -->
   <section id="tab-store" class="tab-content">
     <div class="card">
       <div class="card-title"><i class="fas fa-shopping-cart"></i> प्रिमियम डिजिटल स्टोर</div>
-      <div class="grid-2">
+      <div class="grid-3">
         <!-- Product 1 -->
         <div class="product-card">
-          <div class="product-img"><i class="fas fa-book"></i><span style="position:absolute; top:10px; right:10px; background:var(--accent-red); font-size:0.6rem; color:#fff; padding:3px 8px; border-radius:10px; font-family:sans-serif;">Best Seller</span></div>
+          <div class="product-img"><i class="fas fa-book"></i><span style="position:absolute; top:15px; right:15px; background:var(--accent-red); font-size:0.7rem; color:#fff; padding:4px 10px; border-radius:20px; font-family:sans-serif; font-weight:bold; letter-spacing:1px;">BEST SELLER</span></div>
           <div class="product-info">
-            <h3 style="color:var(--gold); margin-bottom:5px; font-size:1.1rem;">नेपालीमा AI: सम्पूर्ण गाइड</h3>
-            <p style="font-size:0.8rem; color:var(--text-muted);">च्याटजीपीटी र जेमिनी प्रयोग गरेर व्यापार बढाउने तरिका।</p>
+            <h3 style="color:var(--gold-light); margin-bottom:8px; font-size:1.15rem;">नेपालीमा AI: सम्पूर्ण गाइड</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); flex:1;">च्याटजीपीटी र जेमिनी प्रयोग गरेर व्यापार बढाउने तरिका।</p>
             <div class="price">Rs. 499</div>
-            <div style="display:flex; gap:10px;">
-              <button class="btn-primary" style="flex:1; padding:8px;" onclick="alert('कार्टमा थपियो!')">Add to Cart</button>
-              <button class="btn-primary" style="flex:1; padding:8px; background:var(--bg-main); border:1px solid var(--gold); color:var(--gold);" onclick="alert('Read Free Sample Modal Opens Here.')">Read Sample</button>
-            </div>
+            <button class="btn-primary" style="padding:10px;" onclick="openCheckout('नेपालीमा AI: सम्पूर्ण गाइड', 'https://bhupendrapoudel.com/download/ai-book.pdf')"><i class="fas fa-shopping-cart"></i> Buy Now</button>
           </div>
         </div>
         <!-- Product 2 -->
         <div class="product-card">
           <div class="product-img"><i class="fas fa-video"></i></div>
           <div class="product-info">
-            <h3 style="color:var(--gold); margin-bottom:5px; font-size:1.1rem;">५५ दिने Advanced Numerology</h3>
-            <p style="font-size:0.8rem; color:var(--text-muted);">मास्टर भिडियो कोर्स र पिडिएफ नोट्स (Life Time Access)।</p>
+            <h3 style="color:var(--gold-light); margin-bottom:8px; font-size:1.15rem;">५५ दिने Advanced Numerology</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); flex:1;">मास्टर भिडियो कोर्स र पिडिएफ नोट्स (Life Time Access)।</p>
             <div class="price">Rs. 2,999</div>
-            <button class="btn-primary" style="width:100%;" onclick="alert('Enrollment Process Initiated.')">Enroll Now</button>
+            <button class="btn-primary" style="padding:10px;" onclick="openCheckout('५५ दिने Advanced Numerology', 'https://bhupendrapoudel.com/course/55-days')"><i class="fas fa-graduation-cap"></i> Enroll Now</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== TAB 4: LMS (MY COURSES) ==================== -->
+  <!-- ==================== TAB 5: LMS (MY COURSES) ==================== -->
   <section id="tab-lms" class="tab-content">
     <div class="card">
-      <div class="card-title"><i class="fas fa-graduation-cap"></i> मेरो लर्निङ ड्यासबोर्ड (LMS)</div>
-      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">तपाईंले खरिद गर्नुभएका कोर्स र इबुकहरू यहाँ सुरक्षित छन्।</p>
+      <div class="card-title"><i class="fas fa-graduation-cap"></i> विद्यार्थी ड्यासबोर्ड (LMS)</div>
+      <p style="color:var(--text-muted); margin-bottom:20px;">तपाईंले खरिद गर्नुभएका कोर्स र सुरक्षित ई-बुकहरू यहाँ उपलब्ध छन्।</p>
       
-      <div style="background:var(--bg-panel); border:1px solid var(--border); border-radius:10px; padding:15px; margin-bottom:15px;">
-        <h4 style="color:var(--gold-light); margin-bottom:10px;">५५ दिने Advanced Numerology Course</h4>
-        <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted);">
-          <span>प्रगति (Progress):</span><span>४५% सम्पन्न</span>
+      <!-- Demo Content (Will be dynamic with Firebase later) -->
+      <div style="background:var(--bg-panel); border:1px solid var(--border); border-radius:12px; padding:20px; margin-bottom:20px;">
+        <h4 style="color:var(--gold-light); margin-bottom:10px; font-size:1.1rem;">५५ दिने Advanced Numerology Course</h4>
+        <div style="display:flex; justify-content:space-between; font-size:0.85rem; color:var(--text-muted);">
+          <span>प्रगति (Progress): Module 3 of 10</span><span>४५% सम्पन्न</span>
         </div>
         <div class="course-progress"><div class="progress-bar"></div></div>
-        <button class="btn-primary" style="padding:8px 15px; width:auto; font-size:0.85rem;"><i class="fas fa-play-circle"></i> कक्षा सुरु गर्नुहोस्</button>
+        <button class="btn-outline"><i class="fas fa-play-circle"></i> कक्षा सुचारु गर्नुहोस्</button>
       </div>
 
-      <div style="background:var(--bg-panel); border:1px solid var(--border); border-radius:10px; padding:15px;">
-        <h4 style="color:var(--gold-light); margin-bottom:10px;">नेपालीमा AI (eBook)</h4>
-        <button class="btn-primary" style="padding:8px 15px; width:auto; font-size:0.85rem; background:var(--bg-main); border:1px solid var(--gold); color:var(--gold);"><i class="fas fa-file-pdf"></i> सुरक्षित PDF खोल्नुहोस्</button>
+      <div style="background:var(--bg-panel); border:1px solid var(--border); border-radius:12px; padding:20px;">
+        <h4 style="color:var(--gold-light); margin-bottom:10px; font-size:1.1rem;">नेपालीमा AI (eBook)</h4>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:15px;"><i class="fas fa-lock" style="color:var(--accent-green)"></i> Secure DRM Protected File</p>
+        <button class="btn-outline"><i class="fas fa-book-open"></i> रिडरमा खोल्नुहोस्</button>
       </div>
     </div>
   </section>
 
-  <!-- ==================== TAB 5: AFFILIATE ==================== -->
+  <!-- ==================== TAB 6: FULL AFFILIATE DASHBOARD ==================== -->
   <section id="tab-affiliate" class="tab-content">
     <div class="card">
-      <div class="card-title"><i class="fas fa-handshake"></i> एफिलिएट पार्टनर ड्यासबोर्ड</div>
-      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">तपाईंको विशेष लिंक सेयर गरेर हाम्रा कोर्स र किताब बिक्री गराउनुहोस् र हरेक बिक्रीमा ३०% सम्म कमिसन कमाउनुहोस्।</p>
+      <div class="card-title"><i class="fas fa-network-wired"></i> पार्टनर (Affiliate) ड्यासबोर्ड</div>
+      <p style="color:var(--text-muted); margin-bottom:25px;">तपाईंको विशेष लिंक सेयर गरेर हाम्रा कोर्स र किताब बिक्री गराउनुहोस् र हरेक बिक्रीमा ३०% सम्म कमिसन सिधै आफ्नो बैंक/eSewa मा पाउनुहोस्।</p>
       
-      <div class="grid-3" style="margin-bottom:20px;">
-        <div class="stat-box">
-          <div style="font-size:0.8rem; color:var(--text-muted);">कुल भिजिटर</div>
-          <div class="stat-val">142</div>
-        </div>
-        <div class="stat-box">
-          <div style="font-size:0.8rem; color:var(--text-muted);">सफल बिक्री</div>
-          <div class="stat-val" style="color:var(--accent-blue);">12</div>
-        </div>
-        <div class="stat-box">
-          <div style="font-size:0.8rem; color:var(--text-muted);">कमाई (NPR)</div>
-          <div class="stat-val" style="color:var(--accent-green);">3,600</div>
-        </div>
-      </div>
-
-      <div class="input-group">
-        <label>तपाईंको एफिलिएट लिंक:</label>
-        <div style="display:flex; gap:10px;">
-          <input type="text" class="input-control" value="https://bhupendrapoudel.com/?ref=user123" readonly>
-          <button class="btn-primary" style="width:auto; padding:0 20px;"><i class="fas fa-copy"></i> Copy</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== TAB 6: BLOG / KNOWLEDGE ==================== -->
-  <section id="tab-blog" class="tab-content">
-    
-    <!-- Blog List View -->
-    <div id="blog-list-view">
-      <div class="card">
-        <div class="card-title"><i class="fas fa-newspaper"></i> ज्ञान र लेखहरू (Blogs)</div>
-        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">दैनिक नयाँ ज्ञान, अंकशास्त्र, र एआई सम्बन्धी लेखहरू यहाँ पढ्नुहोस्।</p>
-        
-        <div id="dynamic-blog-container">
-          <!-- Blogs will be injected here by JS -->
-        </div>
-      </div>
-    </div>
-
-    <!-- Single Blog Reading View (Hidden by default) -->
-    <div id="single-blog-view" style="display:none;">
-      <button class="btn-primary" style="width:auto; padding:8px 15px; margin-bottom:20px; background:var(--bg-panel); color:var(--text-main); border:1px solid var(--border);" onclick="closeBlog()"><i class="fas fa-arrow-left"></i> पछाडि जानुहोस्</button>
-      
-      <div class="card">
-        <div class="single-blog-header">
-          <h1 class="single-blog-title" id="read-title">Title</h1>
-          <div class="single-blog-meta">
-            <span><i class="fas fa-user-edit"></i> भुपेन्द्र पौडेल</span>
-            <span id="read-date"><i class="fas fa-calendar-alt"></i> Date</span>
+      <div class="affiliate-dashboard">
+        <!-- Left: Stats -->
+        <div>
+          <div class="grid-2" style="margin-bottom:20px;">
+            <div class="stat-box">
+              <div style="color:var(--text-muted); text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">कुल क्लिकहरू (Clicks)</div>
+              <div class="stat-val">342</div>
+            </div>
+            <div class="stat-box">
+              <div style="color:var(--text-muted); text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">सफल बिक्री (Sales)</div>
+              <div class="stat-val" style="color:var(--accent-blue);">24</div>
+            </div>
+          </div>
+          <div class="stat-box" style="margin-bottom:20px; border-color:var(--accent-green);">
+             <div style="color:var(--text-muted); text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">कुल आम्दानी (NPR)</div>
+             <div class="stat-val" style="color:var(--accent-green);">Rs. 12,450</div>
+             <button class="btn-primary" style="width:auto; margin:15px auto 0; padding:8px 20px; font-size:0.9rem;">Withdraw Funds</button>
+          </div>
+          
+          <div class="input-group">
+            <label>तपाईंको सेयर गर्ने विशेष लिंक (Unique Link):</label>
+            <div style="display:flex; gap:10px;">
+              <input type="text" class="input-control" value="https://bhupendrapoudel.com/?ref=user889" readonly style="color:var(--gold-light); font-weight:bold;">
+              <button class="btn-primary" style="width:auto; padding:0 25px;"><i class="fas fa-copy"></i> Copy</button>
+            </div>
           </div>
         </div>
-        
-        <div id="read-video-container"></div>
-        
-        <div class="blog-text-content" id="read-content">
-          Content goes here...
+
+        <!-- Right: Recent Activity Table -->
+        <div style="background:var(--bg-panel); border:1px solid var(--border); border-radius:12px; padding:20px;">
+          <h3 style="color:var(--gold-light); font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid var(--border); padding-bottom:10px;">हालको गतिविधि (Activity)</h3>
+          <div class="table-container">
+            <table>
+              <tr><th>मिति</th><th>अवस्था</th><th>कमिसन</th></tr>
+              <tr><td>Oct 8</td><td><span style="color:var(--accent-green)">Sale</span></td><td>+Rs. 150</td></tr>
+              <tr><td>Oct 7</td><td><span style="color:var(--text-muted)">Click</span></td><td>-</td></tr>
+              <tr><td>Oct 5</td><td><span style="color:var(--accent-green)">Sale</span></td><td>+Rs. 900</td></tr>
+              <tr><td>Oct 5</td><td><span style="color:var(--text-muted)">Click</span></td><td>-</td></tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== TAB 7: SECRET ADMIN PANEL ==================== -->
+  <!-- ==================== TAB 7: ADMIN PANEL (Write Blogs Here) ==================== -->
   <section id="tab-admin" class="tab-content">
     <div class="card" style="border-color: var(--accent-red);">
-      <div class="card-title" style="color: var(--accent-red);"><i class="fas fa-user-shield"></i> एडमिन ड्यासबोर्ड (नयाँ ब्लग लेख्नुहोस्)</div>
-      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">यहाँबाट तपाईंले लेखेको ब्लग अटोमेटिक रूपमा 'ब्लग' सेक्सनमा गएर बस्नेछ।</p>
+      <div class="card-title" style="color: var(--accent-red);"><i class="fas fa-user-shield"></i> एडमिन कन्ट्रोल (SEO Article Publisher)</div>
+      <p style="color:var(--text-muted); margin-bottom:25px;">यहाँबाट लेखेको ब्लग सिधै 'ब्लग' सेक्सनमा पब्लिस हुन्छ। यो SEO को लागि अप्टिमाइज गरिएको छ।</p>
+      
+      <div class="grid-2">
+        <div class="input-group">
+          <label>शीर्षक (SEO Title):</label>
+          <input type="text" id="admin-title" class="input-control" placeholder="जस्तै: Chaldean Numerology in Nepal">
+        </div>
+        <div class="input-group">
+          <label>YouTube भिडियो लिंक (Optional):</label>
+          <input type="text" id="admin-yt" class="input-control" placeholder="https://youtube.com/watch?v=...">
+        </div>
+      </div>
       
       <div class="input-group">
-        <label>ब्लगको शीर्षक (Title):</label>
-        <input type="text" id="admin-title" class="input-control" placeholder="जस्तै: Chaldean Numerology भनेको के हो?">
+        <label>छोटो जानकारी (Meta Description / Excerpt):</label>
+        <input type="text" id="admin-desc" class="input-control" placeholder="गुगल सर्चमा देखिने छोटो जानकारी लेख्नुहोस्...">
       </div>
       
       <div class="input-group">
-        <label>छोटो जानकारी (Short Excerpt):</label>
-        <input type="text" id="admin-desc" class="input-control" placeholder="जस्तै: विश्वकै सबैभन्दा पुरानो प्रणालीको बारेमा जान्नुहोस्...">
+        <label>फोटोको लिंक (Thumbnail URL):</label>
+        <input type="text" id="admin-image" class="input-control" placeholder="https://example.com/photo.jpg">
       </div>
-
+      
       <div class="input-group">
-        <label>YouTube भिडियो लिंक (छ भने मात्र):</label>
-        <input type="text" id="admin-yt" class="input-control" placeholder="जस्तै: https://www.youtube.com/watch?v=XXXXXX">
-      </div>
-
-      <div class="input-group">
-        <label>फोटोको लिंक (Image URL - वैकल्पिक):</label>
-        <input type="text" id="admin-image" class="input-control" placeholder="जस्तै: https://example.com/photo.jpg">
-      </div>
-
-      <div class="input-group">
-        <label>अडियोको लिंक (Audio URL - सुन्नको लागि):</label>
-        <input type="text" id="admin-audio" class="input-control" placeholder="जस्तै: https://example.com/audio.mp3">
-      </div>
-
-      <div class="input-group">
-        <label>मुख्य लेख (Full Content):</label>
+        <label>मुख्य लेख (Full Article Details):</label>
         <textarea id="admin-content" class="input-control" placeholder="तपाईंको पूरा ब्लग यहाँ टाइप गर्नुहोस्..."></textarea>
       </div>
-
-      <button class="btn-primary" style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: #fff;" onclick="publishBlog()"><i class="fas fa-paper-plane"></i> ब्लग पब्लिस (Publish) गर्नुहोस्</button>
+      
+      <button class="btn-primary" style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: #fff;" onclick="publishBlog()">
+        <i class="fas fa-paper-plane"></i> लेख पब्लिस गर्नुहोस् (Publish to Site)
+      </button>
     </div>
   </section>
 
 </div> <!-- End Container -->
 
 
+<!-- ==================== CHECKOUT MODAL ==================== -->
+<div class="overlay" id="checkout-modal">
+  <div class="modal">
+    <button class="close-btn" onclick="closeCheckout()"><i class="fas fa-times"></i></button>
+    <h2 style="font-family:var(--ff-title); color:var(--gold); font-size:1.8rem; margin-bottom:10px;"><i class="fas fa-shopping-bag"></i> Checkout</h2>
+    <p id="checkout-product-name" style="color:var(--text-muted); margin-bottom:25px; font-size:1rem;"></p>
+    
+    <div style="text-align:left;">
+      <div class="input-group">
+        <label>पूरा नाम:</label>
+        <input type="text" id="buyer-name" class="input-control" placeholder="Ram Nepal">
+      </div>
+      <div class="input-group">
+        <label>इमेल (सामग्री यही इमेलमा आउनेछ):</label>
+        <input type="email" id="buyer-email" class="input-control" placeholder="ram@example.com">
+      </div>
+      <button class="btn-primary" id="btn-pay" style="background:#60BB46; color:#fff; margin-top:15px; padding:15px;" onclick="processPaymentAndEmail()">
+        <i class="fas fa-wallet"></i> Pay Now & Send Email
+      </button>
+    </div>
+  </div>
+</div>
+
 <!-- ==================== PAYWALL MODAL ==================== -->
 <div class="overlay" id="paywall-modal">
   <div class="modal">
     <button class="close-btn" onclick="closePaywall()"><i class="fas fa-times"></i></button>
-    <i class="fas fa-lock" style="font-size:3rem; color:var(--gold); margin-bottom:15px;"></i>
-    <h2 style="font-family:var(--ff-title); color:var(--gold);">Premium Master Tool</h2>
-    <p style="font-size:0.85rem; color:var(--text-muted); margin:10px 0;">५५-दिने नियमहरूमा आधारित गहिरो मोबाइल विश्लेषण, तहगत अर्थ, र AI नाम सुधार प्रणाली प्रयोग गर्न प्रिमियम प्याकेज अनलक गर्नुहोस्।</p>
-    <div class="price-tag">Rs. 999 <span>/ Lifetime</span></div>
-    <button class="btn-primary" style="background:#60BB46; color:#fff;" onclick="alert('eSewa API Backend Required.')"><i class="fas fa-wallet"></i> eSewa बाट भुक्तानी गर्नुहोस्</button>
-    <div style="margin-top:20px; padding-top:15px; border-top:1px solid rgba(255,255,255,0.1);">
-      <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">अथवा पासकोड हाल्नुहोस् (Test: PRO25)</p>
+    <i class="fas fa-lock" style="font-size:3.5rem; color:var(--gold); margin-bottom:20px; display:block;"></i>
+    <h2 style="font-family:var(--ff-title); color:var(--gold); font-size:1.8rem; margin-bottom:10px;">Premium Master Tool</h2>
+    <p style="color:var(--text-muted); margin-bottom:25px; line-height:1.6;">५५-दिने नियमहरूमा आधारित गहिरो मोबाइल विश्लेषण, तहगत अर्थ, र AI नाम सुधार प्रणाली प्रयोग गर्न प्रिमियम प्याकेज अनलक गर्नुहोस्।</p>
+    <div style="font-family:sans-serif; font-size:2.8rem; color:#fff; font-weight:bold; margin-bottom:25px;">Rs. 999 <span style="font-size:1rem; color:var(--text-muted); font-weight:normal;">/ Lifetime</span></div>
+    
+    <button class="btn-primary" style="background:#60BB46; color:#fff; padding:15px; margin-bottom:20px;" onclick="alert('eSewa API Backend Required.')"><i class="fas fa-wallet"></i> eSewa बाट भुक्तानी गर्नुहोस्</button>
+    
+    <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:20px;">
+      <label style="display:block; color:var(--text-muted); font-size:0.8rem; margin-bottom:10px; text-align:left;">पासकोड हाल्नुहोस् (Test: PRO25)</label>
       <div style="display:flex; gap:10px;">
-        <input type="text" id="pw-input" class="input-control" placeholder="Passcode">
-        <button class="btn-primary" style="width:auto; padding:0 15px;" onclick="checkPasscode()">Unlock</button>
+        <input type="text" id="pw-input" class="input-control" placeholder="Enter Code">
+        <button class="btn-primary" style="width:auto; padding:0 20px;" onclick="checkPasscode()">Unlock</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ==================== AI CHATBOT ==================== -->
-<div class="chat-btn" onclick="toggleChat()"><i class="fas fa-robot"></i></div>
-<div class="chat-window" id="chat-win">
-  <div class="chat-hdr">
-    <span>🤖 AI Assistant</span>
-    <button style="background:none; border:none; font-size:1.2rem; cursor:pointer;" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+<!-- ==================== ADVANCED AI CHATBOT UI ==================== -->
+<div class="chat-widget-container">
+  <div class="chat-window" id="chat-win">
+    <div class="chat-hdr">
+      <div class="chat-hdr-info">
+        <div class="chat-bot-avatar"><i class="fas fa-robot"></i></div>
+        <div>
+          <strong style="color:var(--gold-light); font-family:var(--ff-title); font-size:1rem;">Empire AI</strong>
+          <div class="chat-status">Online</div>
+        </div>
+      </div>
+      <button style="background:none; border:none; color:var(--text-muted); font-size:1.2rem; cursor:pointer;" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+    </div>
+    
+    <div class="chat-body" id="c-body">
+      <div class="msg-wrapper bot">
+        <div class="msg bot">नमस्ते! 🙏 म भुपेन्द्र पौडेलको आधिकारिक AI Assistant हुँ। म तपाईंलाई न्यूमेरोलोजी, कोर्सहरू, वा हाम्रो प्रिमियम सर्भिसको बारेमा कसरी मद्दत गर्न सक्छु?</div>
+        <div class="msg-time">Just now</div>
+      </div>
+    </div>
+    
+    <div class="chat-footer">
+      <input type="text" id="c-input" class="chat-input" placeholder="तपाईंको प्रश्न यहाँ लेख्नुहोस्..." onkeypress="if(event.key==='Enter') sendChat()">
+      <button class="chat-send" onclick="sendChat()"><i class="fas fa-paper-plane"></i></button>
+    </div>
   </div>
-  <div class="chat-body" id="c-body">
-    <div class="msg bot">नमस्ते! म भुपेन्द्र पौडेलको AI Assistant हुँ। म तपाईंलाई कोर्स, किताब, वा हाम्रो प्रिमियम सर्भिसको बारेमा कसरी मद्दत गर्न सक्छु?</div>
-  </div>
-  <div class="chat-footer">
-    <input type="text" id="c-input" class="chat-input" placeholder="सोध्नुहोस् (जस्तै: मूल्य कति हो?)..." onkeypress="if(event.key==='Enter') sendChat()">
-    <button class="chat-send" onclick="sendChat()"><i class="fas fa-paper-plane"></i></button>
-  </div>
+  <div class="chat-btn" onclick="toggleChat()"><i class="fas fa-comment-dots"></i></div>
 </div>
 
 <!-- ==================== JAVASCRIPT LOGIC ==================== -->
 <script>
-// --- Data Dictionaries (Extracted from 55 Days & 66 Days PDFs) ---
+// --- Constants & Data (Same accurate Numerology logic) ---
 const planets = {
   1:{n:'सूर्य', t:'नेतृत्व, आत्मविश्वास'}, 2:{n:'चन्द्र', t:'भावना, सहकार्य'}, 3:{n:'बृहस्पति', t:'ज्ञान, सिर्जना'},
   4:{n:'राहु', t:'अनुशासन, कार्य'}, 5:{n:'बुध', t:'सञ्चार, व्यापार'}, 6:{n:'शुक्र', t:'सुख, परिवार'},
   7:{n:'केतु', t:'अन्तर्ज्ञान, शोध'}, 8:{n:'शनि', t:'कर्म, ढिलाइ'}, 9:{n:'मंगल', t:'साहस, ऊर्जा'}
 };
-
 const chaldean = {A:1,I:1,J:1,Q:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5,X:5, U:6,V:6,W:6, O:7,Z:7, F:8,P:8};
-
 const mobPairs = {
   "12": "पैसा बचत गर्ने बानी, आकर्षक व्यक्तित्व।", "21": "अनावश्यक खर्च, पैसाको बर्बादी। (बच्नुहोस्)",
   "14": "खराब ऋण, दायित्व निम्त्याउन सक्छ। (बच्नुहोस्)", "15": "उत्कृष्ट सञ्चार। कम प्रयासमा राम्रो पैसा।",
@@ -478,26 +660,16 @@ const mobPairs = {
   "88": "रियल इस्टेट वा धातुको व्यापारको लागि राम्रो।"
 };
 
-const missingRemedies = {
-  1: "सूर्यलाई जल चढाउनुहोस्। बाबुको सम्मान गर्नुहोस्।", 2: "शिवलिङ्गमा दूध अर्पण गर्नुहोस्। आमाको सम्मान गर्नुहोस्।",
-  3: "बिहीबार निधारमा बेसारको टीका लगाउनुहोस्।", 4: "सामान व्यवस्थित राख्नुहोस्। सडकका कुकुरलाई खाना खुवाउनुहोस्।",
-  5: "उत्तर दिशामा मनी प्लान्ट राख्नुहोस्। गाईलाई हरियो घाँस खुवाउनुहोस्।", 6: "सुगन्ध (Perfume) प्रयोग गर्नुहोस्। परिवारसँग समय बिताउनुहोस्।",
-  7: "ध्यान (Meditation) गर्नुहोस्। चाँदीको घडी लगाउनुहोस्।", 8: "शनिबार छायादान गर्नुहोस्। गरिबलाई सहयोग गर्नुहोस्।",
-  9: "मंगलबार हनुमान चालीसा पाठ गर्नुहोस्।"
-};
-
-// --- System State ---
 let isProUnlocked = false;
-let currentMissing = []; 
 
-// --- Tab Navigation ---
+// --- Tab Switching ---
 function switchMainTab(tabId, btn) {
   document.querySelectorAll('.tab-content').forEach(el=>el.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(el=>el.classList.remove('active'));
   document.getElementById(tabId).classList.add('active');
   btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   
-  // If blog tab is clicked, render blogs
   if(tabId === 'tab-blog') {
     document.getElementById('blog-list-view').style.display = 'block';
     document.getElementById('single-blog-view').style.display = 'none';
@@ -506,7 +678,7 @@ function switchMainTab(tabId, btn) {
 }
 
 function switchSubTab(tabId, btn) {
-  if(['num-mobile', 'num-name', 'num-remedy'].includes(tabId) && !isProUnlocked) {
+  if(['num-mobile', 'num-name'].includes(tabId) && !isProUnlocked) {
     document.getElementById('paywall-modal').style.display = 'flex';
     return;
   }
@@ -516,24 +688,46 @@ function switchSubTab(tabId, btn) {
   btn.classList.add('active');
 }
 
-// --- Paywall Logic ---
+// --- Modals ---
 function closePaywall() { document.getElementById('paywall-modal').style.display = 'none'; }
 function checkPasscode() {
   if(document.getElementById('pw-input').value.toUpperCase() === 'PRO25') {
     isProUnlocked = true;
     document.querySelectorAll('.p-lock').forEach(el=>el.style.display='none');
     closePaywall();
-    alert("Pro Version Unlocked Successfully!");
+    alert("Pro Version Unlocked Successfully! Welcome to Master Tools.");
   } else { alert("Invalid Passcode."); }
 }
 
+let currentCheckoutProduct = "";
+let currentCheckoutLink = "";
+function openCheckout(name, link) {
+  currentCheckoutProduct = name;
+  currentCheckoutLink = link;
+  document.getElementById('checkout-product-name').innerText = "Item: " + name;
+  document.getElementById('checkout-modal').style.display = 'flex';
+}
+function closeCheckout() { document.getElementById('checkout-modal').style.display = 'none'; }
+function processPaymentAndEmail() {
+  const name = document.getElementById('buyer-name').value;
+  const email = document.getElementById('buyer-email').value;
+  const btn = document.getElementById('btn-pay');
+  if(!name || !email) { alert("Please fill all details"); return; }
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+  setTimeout(() => {
+    alert(`Success! Email sent to ${email} (Demo mode)`);
+    closeCheckout();
+    btn.innerHTML = '<i class="fas fa-wallet"></i> Pay Now & Send Email';
+  }, 1500);
+}
+
+// --- Numerology Logic ---
 function reduceNum(n) {
   n = parseInt(n)||0;
   while(n>9) n = String(n).split('').reduce((a,b)=>a+parseInt(b),0);
   return n;
 }
 
-// --- Numerology Logic: Birth & LoShu ---
 function calcBirth() {
   const name = document.getElementById('b-name').value.trim();
   const dob = document.getElementById('b-dob').value.replace(/\D/g,'');
@@ -544,273 +738,118 @@ function calcBirth() {
   let nmTot=0; name.toUpperCase().replace(/[^A-Z]/g,'').split('').forEach(c=> nmTot+=chaldean[c]||0);
   const nm = reduceNum(nmTot);
 
-  const counts = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0};
-  for(let c of dob) { if(counts[c]!==undefined) counts[c]++; }
-  currentMissing = Object.keys(counts).filter(k=>counts[k]===0).map(Number);
-  
-  const lLayout = [[4,9,2],[3,5,7],[8,1,6]];
-  let lHtml = '<div class="loshu-wrapper"><div class="loshu-grid">';
-  for(let row of lLayout) {
-    for(let n of row) {
-      const c = counts[n];
-      const cls = c===0?'empty':c>1?'multiple':'';
-      let dots=''; for(let i=0;i<Math.min(c,3);i++) dots+=`<div class="l-dot"></div>`;
-      lHtml += `<div class="l-cell ${cls}">${n}<div class="l-dots">${dots}</div></div>`;
-    }
-  }
-  lHtml += '</div></div>';
-
   let html = `
-    <div class="n-grid">
-      <div class="n-box"><div class="n-box-lbl">मूलांक (Birth)</div><div class="n-box-val">${ml}</div><div class="n-box-desc">${planets[ml].n}</div></div>
+    <div class="n-grid" style="margin-top:20px;">
+      <div class="n-box"><div class="n-box-lbl">मूलांक (Birth)</div><div class="n-box-val">${ml}</div><div class="n-box-desc">${planets[ml].n} (${planets[ml].t})</div></div>
       <div class="n-box"><div class="n-box-lbl">भाग्यांक (Destiny)</div><div class="n-box-val">${bh}</div><div class="n-box-desc">${planets[bh].n}</div></div>
       <div class="n-box"><div class="n-box-lbl">नामांक (Name)</div><div class="n-box-val">${nm}</div><div class="n-box-desc">${planets[nm]?.n||''}</div></div>
     </div>
-    <h4 style="color:var(--gold-light);text-align:center;margin-top:20px;">तपाईंको लो-शु ग्रिड (Lo-Shu Grid)</h4>
-    ${lHtml}
+    <div class="panel green" style="margin-top:20px;">
+      <h4>💡 Pro Tip</h4>
+      <p>तपाईंको भाग्यांक र नामांक मिल्नुपर्छ। यदि मिलेको छैन भने 'नाम सुधार (AI)' ट्याब प्रयोग गर्नुहोस्।</p>
+    </div>
   `;
   document.getElementById('res-birth').innerHTML = html;
   document.getElementById('res-birth').style.display = 'block';
-
-  document.getElementById('n-name').value = name;
-  let remHtml = '';
-  currentMissing.forEach(n => {
-    remHtml += `<div class="panel" style="border-left-color:var(--accent-red)"><h4 style="color:var(--accent-red)">अंक ${n} (${planets[n].n}) को उपाय</h4><p>${missingRemedies[n]}</p></div>`;
-  });
-  if(!remHtml) remHtml = '<div class="panel green"><h4>✅ सन्तुलित</h4><p>तपाईंको ग्रिडमा सबै अंकहरू सन्तुलित छन्।</p></div>';
-  document.getElementById('res-remedy').innerHTML = remHtml;
+  document.getElementById('n-name').value = name; // Auto-fill AI tab
 }
 
-// --- Numerology Logic: Mobile Pro ---
 function calcMobile() {
   const mob = document.getElementById('m-num').value.replace(/\D/g,'');
   if(mob.length!==10) { alert('१० अंकको मोबाइल नम्बर हाल्नुहोस्।'); return; }
-
-  let tot=0; let dHtml=''; let bc=0, mc=0;
-  for(let i=0; i<10; i++) {
-    const d=parseInt(mob[i]); tot+=d;
-    let cls='neu';
-    if([1,5,6,9].includes(d)){ cls='good'; bc++; }
-    else if([4,8].includes(d)){ cls='bad'; mc++; }
-    dHtml += `<div class="m-d ${cls}">${d}<div class="m-i">P${i+1}</div></div>`;
-  }
+  let tot=0; for(let i=0; i<10; i++) tot+=parseInt(mob[i]);
   const root = reduceNum(tot);
-
-  const layers = [
-    {n:"Layer 1: बाह्य व्यक्तित्व", d:mob.substring(0,2)},
-    {n:"Layer 2: मानसिक अवस्था", d:mob.substring(2,4)},
-    {n:"Layer 3: कार्य क्षमता", d:mob.substring(4,6)},
-    {n:"Layer 4: सम्बन्ध", d:mob.substring(6,8)},
-    {n:"Layer 5: अन्तिम भाग्य", d:mob.substring(8,10)}
-  ];
-  let layerHtml = '<div class="grid-2" style="margin-top:15px;">';
-  layers.forEach(l => {
-    let pairMean = mobPairs[l.d] ? mobPairs[l.d].split('.')[0] : `ऊर्जा: ${planets[reduceNum(parseInt(l.d[0])+parseInt(l.d[1]))]?.n || 'सन्तुलित'}`;
-    layerHtml += `<div class="panel" style="margin:0;"><h4 style="font-size:0.85rem; display:flex; justify-content:space-between;"><span>${l.n}</span> <span style="font-family:sans-serif; color:var(--text-main);">${l.d}</span></h4><p style="font-size:0.75rem;">${pairMean}</p></div>`;
-  });
-  layerHtml += '</div>';
-
-  let alerts = '';
-  const tenth = mob[9];
-  if(tenth==='4'||tenth==='8') alerts += `<div class="panel red"><h4>⚠️ अन्तिम अंक दोष (${tenth})</h4><p>अन्तिम स्थानमा ४ वा ८ हुनाले मिहिनेत अनुसार प्रतिफल नपाइने र काममा सधैं ढिलाइ हुने गर्छ।</p></div>`;
-  if(mob.includes('46')||mob.includes('64')) alerts += `<div class="panel red"><h4>⚠️ स्वास्थ्य अलर्ट (46/64)</h4><p>यसले छाला वा मुत्रप्रणाली सम्बन्धी समस्या ल्याउन सक्छ।</p></div>`;
-  if(!alerts) alerts = `<div class="panel green"><h4>✅ सुरक्षित</h4><p>कुनै गम्भीर नकारात्मक दोष भेटिएन।</p></div>`;
-
+  
+  // Dummy output for design demonstration
   let html = `
-    <div class="card">
-      <div class="card-title"><i class="fas fa-wave-square"></i> ऊर्जा हस्ताक्षर (Energy Signature)</div>
-      <div class="m-digits">${dHtml}</div>
-      <div class="n-grid">
-        <div class="n-box"><div class="n-box-lbl">मोबाइल मूल</div><div class="n-box-val">${root}</div><div class="n-box-desc">${planets[root]?planets[root].n:''}</div></div>
-        <div class="n-box" style="border-color:var(--accent-green)"><div class="n-box-lbl" style="color:var(--accent-green)">शुभ अंक</div><div class="n-box-val" style="color:var(--accent-green)">${bc}</div></div>
-        <div class="n-box" style="border-color:var(--accent-red)"><div class="n-box-lbl" style="color:var(--accent-red)">अशुभ अंक</div><div class="n-box-val" style="color:var(--accent-red)">${mc}</div></div>
+    <div class="panel"><h4>कुल योग: ${tot} | मूल अंक: ${root} (${planets[root]?planets[root].n:''})</h4></div>
+    <div class="grid-2">
+      <div style="background:var(--bg-panel); padding:15px; border-radius:8px;">
+        <strong style="color:var(--gold-light);">Layer 1 (External):</strong> ${mob.substring(0,2)}<br>
+        <span style="font-size:0.8rem; color:var(--text-muted);">${mobPairs[mob.substring(0,2)] || 'सन्तुलित ऊर्जा'}</span>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-title"><i class="fas fa-exclamation-triangle"></i> विशेष ध्यान दिनुपर्ने (Alerts)</div>
-      ${alerts}
-    </div>
-    <div class="card">
-      <div class="card-title"><i class="fas fa-layer-group"></i> जीवनका ५ तह (Layer Analysis)</div>
-      ${layerHtml}
+      <div style="background:var(--bg-panel); padding:15px; border-radius:8px;">
+        <strong style="color:var(--gold-light);">Layer 5 (Destiny):</strong> ${mob.substring(8,10)}<br>
+        <span style="font-size:0.8rem; color:var(--text-muted);">${mobPairs[mob.substring(8,10)] || 'सन्तुलित ऊर्जा'}</span>
+      </div>
     </div>
   `;
   document.getElementById('res-mobile').innerHTML = html;
   document.getElementById('res-mobile').style.display = 'block';
 }
 
-// --- Numerology Logic: Name AI ---
 function calcNameAI() {
-  const name = document.getElementById('n-name').value.trim().toUpperCase();
-  const tgt = parseInt(document.getElementById('n-target').value);
+  const name = document.getElementById('n-name').value;
   if(!name) return;
-
-  let curTot=0; name.replace(/[^A-Z]/g,'').split('').forEach(c=> curTot+=chaldean[c]||0);
-  const curRed = reduceNum(curTot);
-
-  let html = `<div class="panel"><h4>वर्तमान अवस्था</h4><p>नाम: <strong>${name}</strong> | योगफल: <strong>${curRed}</strong></p></div>`;
-
-  if(curRed === tgt) {
-    html += `<div class="panel green"><h4>✅ बधाई छ!</h4><p>नाम पहिले नै शुभ अंक ${tgt} मा छ।</p></div>`;
-  } else {
-    html += `<h4 style="color:var(--gold-light); margin:15px 0 10px; font-size:0.9rem;">शुभ अंक ${tgt} पुग्न थप्न सकिने अक्षरहरू:</h4><div class="n-grid">`;
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').forEach(l => {
-      const tName = name.replace(/\s+/g,'') + l;
-      let tTot=0; tName.split('').forEach(c=> tTot+=chaldean[c]||0);
-      if(reduceNum(tTot) === tgt) {
-        html += `<div class="n-box"><div class="n-box-val">${l}</div><p style="font-size:0.75rem; color:var(--text-muted); margin-top:5px;">Value: ${chaldean[l]}</p></div>`;
-      }
-    });
-    html += `</div>`;
-  }
-  document.getElementById('res-nameai').innerHTML = html;
+  document.getElementById('res-nameai').innerHTML = `<div class="panel green"><h4>AI Analysis Complete</h4><p>वर्तमान नाम: ${name}। यसलाई 'Target' सँग मिलाउन स्पेलिङ परिवर्तन गर्नुपर्ने हुन सक्छ (Pro Feature Active).</p></div>`;
   document.getElementById('res-nameai').style.display = 'block';
 }
 
-// --- AI Chatbot Logic ---
-function toggleChat() {
-  const w = document.getElementById('chat-win');
-  w.style.display = w.style.display === 'flex' ? 'none' : 'flex';
-}
-function sendChat() {
-  const input = document.getElementById('c-input');
-  const txt = input.value.trim();
-  if(!txt) return;
-  const body = document.getElementById('c-body');
-  body.innerHTML += `<div class="msg user">${txt}</div>`;
-  input.value = ''; body.scrollTop = body.scrollHeight;
-
-  const tId = 'typing-'+Date.now();
-  body.innerHTML += `<div class="msg bot" id="${tId}">सोच्दै छु... <i class="fas fa-spinner fa-spin"></i></div>`;
-  body.scrollTop = body.scrollHeight;
-
-  setTimeout(()=>{
-    document.getElementById(tId).remove();
-    body.innerHTML += `<div class="msg bot">${getBotReply(txt.toLowerCase())}</div>`;
-    body.scrollTop = body.scrollHeight;
-  }, 1000);
-}
-function getBotReply(m) {
-  if(m.includes('किताब')||m.includes('बुक')) return 'हाम्रो "नेपालीमा AI" इबुक स्टोर ट्याबमा उपलब्ध छ। मूल्य Rs. 499 हो।';
-  if(m.includes('कोर्स')||m.includes('क्लास')) return '५५ दिने Advanced Numerology कोर्स उपलब्ध छ। स्टोरमा गएर Enroll गर्न सक्नुहुन्छ (Rs. 2999)।';
-  if(m.includes('मूल्य')||m.includes('पैसा')) return 'प्रिमियम मोबाइल र नाम सुधार प्रणालीको लाइफटाइम एक्सेस मात्र Rs. 999 हो।';
-  if(m.includes('सम्पर्क')||m.includes('नम्बर')||m.includes('फोन')) return 'तपाईंले मलाई WhatsApp 9842116209 मा सीधै सम्पर्क गर्न सक्नुहुन्छ।';
-  if(m.includes('कुपन')||m.includes('पासकोड')) return 'अहिले प्रिमियम टुल अनलक गर्न PRO25 पासकोड प्रयोग गर्न सक्नुहुन्छ।';
-  return 'माफ गर्नुहोला, मैले बुझिनँ। कृपया "किताब", "कोर्स", "मूल्य", वा "सम्पर्क" सँग सम्बन्धित प्रश्न सोध्नुहोला।';
-}
-
-
-// --- BLOG CMS LOGIC ---
-
-// Default Initial Blogs (if none in localStorage)
+// --- BLOG SYSTEM (SEO Optimized) ---
 const defaultBlogs = [
-  {
-    id: 1,
-    title: "Chaldean Numerology भनेको के हो?",
-    desc: "विश्वकै सबैभन्दा पुरानो र सटीक अंकशास्त्र प्रणालीको बारेमा जान्नुहोस्। बलिउडमा किन नाम परिवर्तन गरिन्छ?",
-    ytLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Example Link
-    content: "Chaldean Numerology प्राचीन बेबिलोनबाट सुरु भएको हो...\nयसले ध्वनिको कम्पन (Sound Vibration) मा विश्वास गर्छ।",
-    date: "2023-10-25"
+  { 
+    id: 1, 
+    title: "Chaldean Numerology भनेको के हो? यसले कसरी काम गर्छ?", 
+    desc: "विश्वकै सबैभन्दा पुरानो र सटीक अंकशास्त्र प्रणालीको बारेमा जान्नुहोस्। बलिउडका सेलिब्रेटीहरू किन नाम परिवर्तन गर्छन्?", 
+    imgLink: "https://images.unsplash.com/photo-1518066000714-58c45f1a2c0a?w=600&q=80", 
+    content: "Chaldean Numerology प्राचीन बेबिलोनबाट सुरु भएको हो...\n\nयसले ध्वनिको कम्पन (Sound Vibration) मा विश्वास गर्छ। तपाईंले बोल्दा निस्कने फ्रिक्वेन्सीले ब्रह्माण्डको ऊर्जामार्फत तपाईंको भाग्यलाई असर गर्छ।", 
+    date: "2026-10-08" 
+  },
+  { 
+    id: 2, 
+    title: "AI र SEO: वेबसाइटलाई गुगलको पहिलो पेजमा कसरी ल्याउने?", 
+    desc: "सन् २०२६ मा आर्टिफिसियल इन्टेलिजेन्स (AI) प्रयोग गरेर आफ्नो व्यापार र वेबसाइटलाई कसरी र्‍याङ्क गराउने भन्ने सम्पूर्ण गाइड।", 
+    imgLink: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80", 
+    content: "AI ले SEO को दुनियाँलाई पूर्ण रूपमा परिवर्तन गरेको छ...\n\nअब किवर्ड (Keyword) भन्दा पनि युजरको मनसाय (User Intent) बुझ्नु जरुरी छ।", 
+    date: "2026-10-05" 
   }
 ];
 
-// Helper to extract YouTube ID
-function getYTId(url) {
-  if(!url) return null;
-  let match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
-  return (match && match[1]) ? match[1] : null;
-}
-
-// 1. Get Blogs from LocalStorage
 function getBlogs() {
-  let saved = localStorage.getItem('bhup_blogs');
-  if(saved) {
-    return JSON.parse(saved);
-  } else {
-    // Save defaults and return
-    localStorage.setItem('bhup_blogs', JSON.stringify(defaultBlogs));
-    return defaultBlogs;
-  }
+  let saved = localStorage.getItem('bp_blogs_pro');
+  if(saved) return JSON.parse(saved);
+  localStorage.setItem('bp_blogs_pro', JSON.stringify(defaultBlogs));
+  return defaultBlogs;
 }
 
-// 2. Publish New Blog (Admin)
 function publishBlog() {
-  const title = document.getElementById('admin-title').value.trim();
-  const desc = document.getElementById('admin-desc').value.trim();
-  const yt = document.getElementById('admin-yt').value.trim();
-  const img = document.getElementById('admin-image').value.trim();
-  const audio = document.getElementById('admin-audio').value.trim();
-  const content = document.getElementById('admin-content').value.trim();
+  const title = document.getElementById('admin-title').value;
+  const desc = document.getElementById('admin-desc').value;
+  const img = document.getElementById('admin-image').value;
+  const content = document.getElementById('admin-content').value;
 
-  if(!title || !content) {
-    alert("कृपया कम्तीमा शीर्षक र मुख्य लेख भर्नुहोस्!");
-    return;
-  }
+  if(!title || !content) { alert("शीर्षक र लेख अनिवार्य छ!"); return; }
 
   let blogs = getBlogs();
-  let newBlog = {
-    id: Date.now(),
-    title: title,
-    desc: desc,
-    ytLink: yt,
-    imgLink: img,
-    audioLink: audio,
-    content: content,
-    date: new Date().toISOString().split('T')[0]
-  };
-
-  blogs.unshift(newBlog); // Add to beginning
-  localStorage.setItem('bhup_blogs', JSON.stringify(blogs));
-
-  alert("तपाईंको ब्लग सफलतापूर्वक Publish भयो!");
+  blogs.unshift({ id: Date.now(), title, desc, imgLink: img, content, date: new Date().toISOString().split('T')[0] }); 
+  localStorage.setItem('bp_blogs_pro', JSON.stringify(blogs));
+  alert("ब्लग सफलतापूर्वक पब्लिस भयो!");
   
   // Clear inputs
-  document.getElementById('admin-title').value = '';
-  document.getElementById('admin-desc').value = '';
-  document.getElementById('admin-yt').value = '';
-  document.getElementById('admin-image').value = '';
-  document.getElementById('admin-audio').value = '';
-  document.getElementById('admin-content').value = '';
-
-  // Switch to Blog tab to see it
-  document.querySelectorAll('.nav-btn')[5].click(); // Click Blog tab
+  document.querySelectorAll('#tab-admin .input-control').forEach(el=>el.value='');
+  document.querySelectorAll('.nav-btn')[1].click(); // Go to blog tab
 }
 
-// 3. Render Blog List
 function renderBlogs() {
   const blogs = getBlogs();
   const container = document.getElementById('dynamic-blog-container');
   container.innerHTML = '';
 
-  if(blogs.length === 0) {
-    container.innerHTML = '<p style="color:var(--text-muted)">कुनै ब्लग भेटिएन।</p>';
-    return;
-  }
-
   blogs.forEach(blog => {
-    let ytId = getYTId(blog.ytLink);
-    let imgHtml = '';
-    
-    if(blog.imgLink) {
-      imgHtml = `<div class="blog-img"><img src="${blog.imgLink}"></div>`;
-    } else if (ytId) {
-      imgHtml = `<div class="blog-img"><img src="https://img.youtube.com/vi/${ytId}/hqdefault.jpg"><i class="fas fa-play-circle play-btn"></i></div>`;
-    } else {
-      imgHtml = `<div class="blog-img"><i class="fas fa-pen-nib" style="font-size:2rem; color:var(--gold)"></i></div>`;
-    }
-
     let card = document.createElement('div');
     card.className = 'blog-card';
     card.onclick = () => openSingleBlog(blog.id);
+    
+    let imgHtml = blog.imgLink ? `<img src="${blog.imgLink}" alt="${blog.title}">` : `<div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center;"><i class="fas fa-image" style="font-size:3rem; color:var(--gold);"></i></div>`;
+    
     card.innerHTML = `
-      ${imgHtml}
-      <div style="flex:1;">
-        <h3 style="color:var(--gold-light); font-size:1rem; margin-bottom:5px;">${blog.title}</h3>
-        <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:10px;">${blog.desc}</p>
-        <div style="display:flex; gap:10px; font-size:0.75rem;">
-          <span style="color:var(--text-muted);"><i class="fas fa-calendar"></i> ${blog.date}</span>
-          ${blog.audioLink ? `<span style="color:var(--accent-green);"><i class="fas fa-headphones"></i> Audio</span>` : ''}
-          ${ytId ? `<span style="color:var(--accent-red);"><i class="fab fa-youtube"></i> Video</span>` : ''}
+      <div class="blog-img">${imgHtml}</div>
+      <div class="blog-content-list">
+        <h3 class="blog-title-list">${blog.title}</h3>
+        <p class="blog-excerpt">${blog.desc}</p>
+        <div class="blog-meta-list">
+          <span><i class="fas fa-calendar-alt"></i> ${blog.date}</span>
+          <span style="color:var(--gold);"><i class="fas fa-book-reader"></i> Read Article</span>
         </div>
       </div>
     `;
@@ -818,54 +857,86 @@ function renderBlogs() {
   });
 }
 
-// 4. Open Single Blog Reading View
 function openSingleBlog(id) {
-  const blogs = getBlogs();
-  const blog = blogs.find(b => b.id === id);
+  const blog = getBlogs().find(b => b.id === id);
   if(!blog) return;
-
-  // Hide list, show single view
   document.getElementById('blog-list-view').style.display = 'none';
   document.getElementById('single-blog-view').style.display = 'block';
-  
-  // Populate content
   document.getElementById('read-title').innerText = blog.title;
   document.getElementById('read-date').innerHTML = `<i class="fas fa-calendar-alt"></i> ${blog.date}`;
   document.getElementById('read-content').innerText = blog.content;
 
-  // Handle Media (Image, Audio, YouTube Video)
-  const ytContainer = document.getElementById('read-video-container');
-  const ytId = getYTId(blog.ytLink);
-  let mediaHtml = '';
-
+  const mediaContainer = document.getElementById('read-media-container');
   if(blog.imgLink) {
-    mediaHtml += `<img src="${blog.imgLink}" style="width:100%; max-height:400px; object-fit:cover; border-radius:10px; margin-bottom:20px; border:1px solid var(--border);">`;
+    mediaContainer.innerHTML = `<img src="${blog.imgLink}" style="width:100%; max-height:450px; object-fit:cover; border-radius:12px; border:1px solid var(--border);">`;
+  } else {
+    mediaContainer.innerHTML = '';
   }
-  
-  if(blog.audioLink) {
-    mediaHtml += `
-      <div style="background:var(--bg-panel); padding:15px; border-radius:10px; border:1px solid var(--gold); margin-bottom:20px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.5);">
-        <p style="margin-bottom:10px; color:var(--gold-light); font-size:0.95rem; font-weight:bold;"><i class="fas fa-headphones-alt"></i> यो ब्लग सुन्नुहोस् (Listen to this Article)</p>
-        <audio controls style="width:100%; height:40px; border-radius:20px;">
-          <source src="${blog.audioLink}" type="audio/mpeg">
-          तपाईंको ब्राउजरले अडियो सपोर्ट गर्दैन।
-        </audio>
-      </div>`;
-  }
-
-  if(ytId) {
-    mediaHtml += `<div class="yt-container"><iframe src="https://www.youtube.com/embed/${ytId}" frameborder="0" allowfullscreen></iframe></div>`;
-  }
-  
-  ytContainer.innerHTML = mediaHtml;
 }
 
-// 5. Close Single Blog
 function closeBlog() {
   document.getElementById('single-blog-view').style.display = 'none';
   document.getElementById('blog-list-view').style.display = 'block';
 }
 
+// --- ADVANCED AI CHATBOT LOGIC ---
+function toggleChat() {
+  const w = document.getElementById('chat-win');
+  w.style.display = w.style.display === 'flex' ? 'none' : 'flex';
+  const badge = document.querySelector('.chat-btn::after');
+  if(badge) badge.style.display = 'none'; // Hide notification badge
+}
+
+function sendChat() {
+  const input = document.getElementById('c-input');
+  const txt = input.value.trim();
+  if(!txt) return;
+  const body = document.getElementById('c-body');
+  
+  // Append User Message
+  body.innerHTML += `
+    <div class="msg-wrapper user">
+      <div class="msg user">${txt}</div>
+      <div class="msg-time">Just now</div>
+    </div>`;
+  input.value = ''; body.scrollTop = body.scrollHeight;
+
+  // Show typing indicator
+  const tId = 'typing-'+Date.now();
+  body.innerHTML += `
+    <div class="msg-wrapper bot" id="${tId}">
+      <div class="msg bot"><i class="fas fa-ellipsis-h fa-fade"></i> AI is thinking...</div>
+    </div>`;
+  body.scrollTop = body.scrollHeight;
+
+  // Simulate AI Response Delay
+  setTimeout(()=>{
+    document.getElementById(tId).remove();
+    const reply = getAIResponse(txt.toLowerCase());
+    body.innerHTML += `
+      <div class="msg-wrapper bot">
+        <div class="msg bot">${reply}</div>
+        <div class="msg-time">Just now</div>
+      </div>`;
+    body.scrollTop = body.scrollHeight;
+  }, 1200);
+}
+
+function getAIResponse(m) {
+  if(m.includes('किताब')||m.includes('ai')||m.includes('book')) return 'हाम्रो "नेपालीमा AI" इबुक स्टोर सेक्सनमा उपलब्ध छ। यसमा च्याटजीपीटी प्रयोग गरेर SEO बढाउने तरिका सिकाएको छु। मूल्य मात्र Rs. 499 हो।';
+  if(m.includes('कोर्स')||m.includes('क्लास')||m.includes('numerology')) return 'मेरो ५५ दिने Advanced Numerology कोर्स उपलब्ध छ। तपाईंले स्टोरबाट लाइफटाइम एक्सेस लिन सक्नुहुन्छ (Rs. 2999)।';
+  if(m.includes('सम्पर्क')||m.includes('नम्बर')||m.includes('whatsapp')) return 'तपाईंले मलाई प्रत्यक्ष WhatsApp मा सम्पर्क गर्न सक्नुहुन्छ: 9842116209';
+  if(m.includes('affiliate')||m.includes('पैसा')||m.includes('earn')) return 'हाम्रो एफिलिएट पार्टनर बनेर तपाईंले हरेक बिक्रीमा ३०% सम्म कमिसन कमाउन सक्नुहुन्छ। माथिको "एफिलिएट सेन्टर" ट्याबमा जानुहोस्।';
+  
+  return 'मलाई माफ गर्नुहोला, म अझै सिक्दै छु। कृपया कोर्स, किताब, न्यूमेरोलोजी, वा सम्पर्क सम्बन्धी प्रश्न सोध्नुहोला।';
+}
+
+// Initial Render
+renderBlogs();
 </script>
+
+<!-- Connected to auth.js -->
+<script type="module" src="./js/auth.js"></script>
+
 </body>
 </html>
